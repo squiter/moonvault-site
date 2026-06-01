@@ -1,5 +1,28 @@
 {
   "schema_version": 1,
-  "latest": null,
-  "releases": []
+  "latest": "v1.21.5",
+  "releases": [
+    {
+      "version": "v1.21.5",
+      "published_at": "2026-06-01T22:50:32Z",
+      "notes": "\n### Changed\n\n- Pointed the in-app update check at the new public release feed at `https://moonvaultrpg.com/releases.json`. Existing installs continue to update normally; future releases are mirrored to `moonvaultrpg.com` so downloads remain public after the source repository is moved to private.\n\n\n",
+      "assets": {
+        "linux": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.21.5/moonvault_1.21.5_amd64.AppImage",
+          "size": 91161792,
+          "name": "moonvault_1.21.5_amd64.AppImage"
+        },
+        "macos": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.21.5/Moonvault_1.21.5_aarch64.dmg",
+          "size": 9111717,
+          "name": "Moonvault_1.21.5_aarch64.dmg"
+        },
+        "windows": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.21.5/Moonvault_1.21.5_x64_en-US.msi",
+          "size": 5558272,
+          "name": "Moonvault_1.21.5_x64_en-US.msi"
+        }
+      }
+    }
+  ]
 }
