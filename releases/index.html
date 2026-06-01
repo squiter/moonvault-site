@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#120b17" />
+    <title>Moonvault — Releases</title>
+    <meta name="description" content="Download Moonvault for macOS, Windows, and Linux." />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="icon" type="image/png" href="/assets/moonvault.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/styles.css" />
+  </head>
+  <body class="releases-page">
+    <main class="vault">
+      <a href="/" class="back">&larr; Moonvault</a>
+      <h1>Releases</h1>
+      <p class="subtitle">Choose your platform. Stable builds only.</p>
+      <div id="releases-root" class="releases-list">
+        <div class="releases-empty">Loading releases&hellip;</div>
+      </div>
+    </main>
+    <script>
+      const PLATFORM_LABELS = {
+        macos: "macOS",
+        windows: "Windows",
+        linux: "Linux",
+      };
+      const PLATFORM_ORDER = ["macos", "windows", "linux"];
+
+      function formatDate(iso) {
+        if (!iso) return "";
+        try {
+          const d = new Date(iso);
+          if (Number.isNaN(d.getTime())) return "";
+          return d.toLocaleDateString(undefined, {
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+          });
+        } catch {
+          return "";
+        }
+      }
+
+      function renderRelease(release) {
+        const downloads = PLATFORM_ORDER.filter((key) => release.assets && release.assets[key])
+          .map((key) => {
+            const asset = release.assets[key];
+            return `<a href="${asset.url}" rel="noopener">${PLATFORM_LABELS[key]}</a>`;
+          })
+          .join("");
+        const notesHtml = release.notes
+          ? `<div class="notes">${release.notes
+              .replace(/&/g, "&amp;")
+              .replace(/</g, "&lt;")
+              .replace(/>/g, "&gt;")}</div>`
+          : "";
+        return `
+          <article class="release-card">
+            <header>
+              <h2>${release.version}</h2>
+              <span class="date">${formatDate(release.published_at)}</span>
+            </header>
+            ${notesHtml}
+            <div class="downloads">${downloads || '<span class="date">No downloads available.</span>'}</div>
+          </article>
+        `;
+      }
+
+      async function load() {
+        const root = document.getElementById("releases-root");
+        try {
+          const res = await fetch("/releases.json", { cache: "no-cache" });
+          if (!res.ok) throw new Error(`HTTP ${res.status}`);
+          const data = await res.json();
+          const releases = Array.isArray(data.releases) ? data.releases : [];
+          if (releases.length === 0) {
+            root.innerHTML =
+              '<div class="releases-empty">No releases yet. The vault is being forged.</div>';
+            return;
+          }
+          root.innerHTML = releases.map(renderRelease).join("");
+        } catch (err) {
+          root.innerHTML =
+            '<div class="releases-empty">Could not load releases right now. Please try again later.</div>';
+        }
+      }
+
+      load();
+    </script>
+  </body>
+</html>
