@@ -1,7 +1,29 @@
 {
   "schema_version": 1,
-  "latest": "v1.21.6",
+  "latest": "v1.21.7",
   "releases": [
+    {
+      "version": "v1.21.7",
+      "published_at": "2026-06-02T02:10:07Z",
+      "notes": "### Changed\n\n- Replaced the wide Markdown button strip with compact Format and Insert menus.\n\n### Fixed\n\n- Made Live Editor formatting actions apply visibly and consistently for code, headings, lists, quotes, and tables.\n- Preserved quote formatting when Live Editor content is saved back to Markdown.\n",
+      "assets": {
+        "linux": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.21.7/moonvault_1.21.7_amd64.AppImage",
+          "size": 91165888,
+          "name": "moonvault_1.21.7_amd64.AppImage"
+        },
+        "macos": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.21.7/Moonvault_1.21.7_aarch64.dmg",
+          "size": 9112438,
+          "name": "Moonvault_1.21.7_aarch64.dmg"
+        },
+        "windows": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.21.7/Moonvault_1.21.7_x64_en-US.msi",
+          "size": 5562368,
+          "name": "Moonvault_1.21.7_x64_en-US.msi"
+        }
+      }
+    },
     {
       "version": "v1.21.6",
       "published_at": "2026-06-02T01:35:56Z",
