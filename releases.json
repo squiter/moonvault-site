@@ -1,7 +1,29 @@
 {
   "schema_version": 1,
-  "latest": "v1.21.8",
+  "latest": "v1.21.10",
   "releases": [
+    {
+      "version": "v1.21.10",
+      "published_at": "2026-06-02T19:43:42Z",
+      "notes": "### Fixed\n\n- Fixed macOS release packaging by ad-hoc signing the app bundle before publishing, preventing Apple Silicon downloads from being flagged as damaged.\n",
+      "assets": {
+        "linux": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.21.10/moonvault_1.21.10_amd64.AppImage",
+          "size": 91239616,
+          "name": "moonvault_1.21.10_amd64.AppImage"
+        },
+        "macos": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.21.10/Moonvault_1.21.10_aarch64.dmg",
+          "size": 9186167,
+          "name": "Moonvault_1.21.10_aarch64.dmg"
+        },
+        "windows": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.21.10/Moonvault_1.21.10_x64_en-US.msi",
+          "size": 5627904,
+          "name": "Moonvault_1.21.10_x64_en-US.msi"
+        }
+      }
+    },
     {
       "version": "v1.21.8",
       "published_at": "2026-06-02T14:25:39Z",
