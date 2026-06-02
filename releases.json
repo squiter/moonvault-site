@@ -1,7 +1,29 @@
 {
   "schema_version": 1,
-  "latest": "v1.21.5",
+  "latest": "v1.21.6",
   "releases": [
+    {
+      "version": "v1.21.6",
+      "published_at": "2026-06-02T01:35:56Z",
+      "notes": "### Added\n\n- Added more Markdown editing actions for code, headings, lists, quotes, and tables.\n- Added a contextual formatting popover when selecting text in the Markdown editor.\n\n### Fixed\n\n- Kept manual update-check results inside Settings instead of showing the \"up to date\" message behind the modal.\n- Made the campaign focus setting use the current page's campaign when one is available, so \"Hide other campaigns\" no longer looks mysteriously disabled while working inside a campaign.\n",
+      "assets": {
+        "linux": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.21.6/moonvault_1.21.6_amd64.AppImage",
+          "size": 91165888,
+          "name": "moonvault_1.21.6_amd64.AppImage"
+        },
+        "macos": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.21.6/Moonvault_1.21.6_aarch64.dmg",
+          "size": 9115962,
+          "name": "Moonvault_1.21.6_aarch64.dmg"
+        },
+        "windows": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.21.6/Moonvault_1.21.6_x64_en-US.msi",
+          "size": 5558272,
+          "name": "Moonvault_1.21.6_x64_en-US.msi"
+        }
+      }
+    },
     {
       "version": "v1.21.5",
       "published_at": "2026-06-01T22:50:32Z",
