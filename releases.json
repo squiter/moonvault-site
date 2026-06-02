@@ -1,7 +1,29 @@
 {
   "schema_version": 1,
-  "latest": "v1.21.7",
+  "latest": "v1.21.8",
   "releases": [
+    {
+      "version": "v1.21.8",
+      "published_at": "2026-06-02T14:25:39Z",
+      "notes": "### Added\n\n- Added offline Moonvault Pro license activation with locally verified signed license keys.\n- Added a 1Password-backed license key generation workflow for issuing customer licenses.\n\n### Fixed\n\n- Made the Pro badge readable on the dark sidebar.\n",
+      "assets": {
+        "linux": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.21.8/moonvault_1.21.8_amd64.AppImage",
+          "size": 91239616,
+          "name": "moonvault_1.21.8_amd64.AppImage"
+        },
+        "macos": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.21.8/Moonvault_1.21.8_aarch64.dmg",
+          "size": 9178795,
+          "name": "Moonvault_1.21.8_aarch64.dmg"
+        },
+        "windows": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.21.8/Moonvault_1.21.8_x64_en-US.msi",
+          "size": 5627904,
+          "name": "Moonvault_1.21.8_x64_en-US.msi"
+        }
+      }
+    },
     {
       "version": "v1.21.7",
       "published_at": "2026-06-02T02:10:07Z",
