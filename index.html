@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#120b17" />
-    <title>Moonvault — Coming Soon</title>
-    <meta name="description" content="Moonvault is a tabletop RPG vault for game masters. Coming soon." />
+    <title>Moonvault — Download the RPG vault for game masters</title>
+    <meta name="description" content="Download Moonvault for macOS, Windows, and Linux. Moonvault has a forever free version and a lifetime Pro license for Ko-fi supporters." />
     <meta property="og:title" content="Moonvault" />
-    <meta property="og:description" content="A tabletop RPG vault for game masters. Coming soon." />
+    <meta property="og:description" content="Download Moonvault for macOS, Windows, and Linux. Forever free, with a lifetime Pro license for Ko-fi supporters." />
     <meta property="og:image" content="/assets/moonvault.png" />
     <meta property="og:type" content="website" />
     <link rel="icon" type="image/png" href="/assets/moonvault.png" />
@@ -17,26 +17,127 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="/assets/styles.css" />
   </head>
-  <body>
-    <main class="vault">
-      <div class="halo">
-        <img src="/assets/moonvault.png" alt="Moonvault" class="sigil" width="180" height="180" />
-      </div>
-      <h1 class="title">Moonvault</h1>
-      <p class="tagline">A vault for the game master.</p>
+  <body class="home-page">
+    <main class="vault home-vault">
+      <section class="hero" aria-labelledby="moonvault-title">
+        <div class="hero-mark">
+          <div class="halo">
+            <img src="/assets/moonvault.png" alt="Moonvault" class="sigil" width="180" height="180" />
+          </div>
+        </div>
+        <div class="hero-copy">
+          <p class="eyebrow">Now available</p>
+          <h1 id="moonvault-title" class="title">Moonvault</h1>
+          <p class="tagline">A vault for the game master.</p>
+          <p class="intro">
+            Download Moonvault and keep your tabletop RPG campaigns, notes, and session prep
+            close at hand. The forever free version is ready to use, and Moonvault Pro is
+            already available for supporters.
+          </p>
+          <nav class="links download-links" aria-label="Download Moonvault">
+            <a class="primary-action" href="/releases/">Download Moonvault</a>
+            <a href="https://ko-fi.com/squiter" rel="noopener">Get Pro on Ko-fi</a>
+          </nav>
+          <p id="latest-version" class="version-note">Latest builds for macOS, Windows, and Linux.</p>
+        </div>
+      </section>
+
       <div class="ornament" aria-hidden="true">
         <span></span><span class="dot"></span><span></span>
       </div>
-      <p class="coming">The vault is being forged.<br />Available soon.</p>
-      <nav class="links">
-        <a href="/releases/">Releases</a>
-      </nav>
+
+      <section class="plan-section" aria-labelledby="free-title">
+        <div class="section-heading">
+          <p class="eyebrow">Forever free</p>
+          <h2 id="free-title">What you can use today</h2>
+        </div>
+        <ul class="feature-grid">
+          <li>
+            <strong>Campaign vaults</strong>
+            Organize your game material around the campaigns you are actively running.
+          </li>
+          <li>
+            <strong>Markdown notes</strong>
+            Write prep, lore, handouts, lists, quotes, tables, and code-style blocks in a flexible editor.
+          </li>
+          <li>
+            <strong>Live editing tools</strong>
+            Use compact formatting and insert menus without leaving your writing flow.
+          </li>
+          <li>
+            <strong>Campaign focus</strong>
+            Hide other campaigns when you want a cleaner workspace for the current table.
+          </li>
+          <li>
+            <strong>Desktop downloads</strong>
+            Install stable builds for macOS, Windows, and Linux from the public release page.
+          </li>
+          <li>
+            <strong>Built-in updates</strong>
+            Check for new Moonvault releases from inside the app as the vault keeps improving.
+          </li>
+        </ul>
+      </section>
+
+      <section class="pro-panel" aria-labelledby="pro-title">
+        <div>
+          <p class="eyebrow">Moonvault Pro</p>
+          <h2 id="pro-title">A lifetime key for Ko-fi supporters</h2>
+          <p>
+            Any donation above US$10 on Ko-fi receives a lifetime license key to unlock
+            Moonvault Pro. Keys are verified locally, so your license keeps working even when
+            your prep night is fully offline.
+          </p>
+        </div>
+        <a class="pro-action" href="https://ko-fi.com/squiter" rel="noopener">Support on Ko-fi</a>
+      </section>
     </main>
     <footer class="footer">
       <span>Moonvault &middot; moonvaultrpg.com</span>
     </footer>
     <script src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js"></script>
     <script>
+      const PLATFORM_LABELS = {
+        macos: "macOS",
+        windows: "Windows",
+        linux: "Linux",
+      };
+      const PLATFORM_ORDER = ["macos", "windows", "linux"];
+
+      async function loadLatestDownloads() {
+        const links = document.querySelector(".download-links");
+        const latestVersion = document.getElementById("latest-version");
+        if (!links || !latestVersion) return;
+
+        try {
+          const res = await fetch("/releases.json", { cache: "no-cache" });
+          if (!res.ok) throw new Error(`HTTP ${res.status}`);
+          const data = await res.json();
+          const latest =
+            Array.isArray(data.releases) && data.releases.find((release) => release.version === data.latest);
+          if (!latest || !latest.assets) return;
+
+          const platformLinks = PLATFORM_ORDER.filter((key) => latest.assets[key])
+            .map((key) => {
+              const a = document.createElement("a");
+              a.href = latest.assets[key].url;
+              a.rel = "noopener";
+              a.textContent = PLATFORM_LABELS[key];
+              if (key === "macos") a.className = "primary-action";
+              return a;
+            });
+
+          if (platformLinks.length > 0) {
+            links.replaceChildren(...platformLinks);
+            latestVersion.textContent = `${latest.version} is ready for macOS, Windows, and Linux.`;
+          }
+        } catch {
+          latestVersion.textContent = "Latest builds are available from the releases page.";
+        }
+      }
+
+      loadLatestDownloads();
+
       kofiWidgetOverlay.draw("squiter", {
         type: "floating-chat",
         "floating-chat.donateButton.text": "Support me",
