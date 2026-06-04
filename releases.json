@@ -1,7 +1,29 @@
 {
   "schema_version": 1,
-  "latest": "v1.21.10",
+  "latest": "v1.21.11",
   "releases": [
+    {
+      "version": "v1.21.11",
+      "published_at": "2026-06-04T16:58:12Z",
+      "notes": "\n### Added\n\n- Added Pro-gated reusable page templates with template editing, dynamic template fields, and session template preselection.\n- Added a Moonvault Pro link in Settings for lifetime Pro donation access.\n\n### Changed\n\n- Made license key generation use lowercase Makefile arguments, such as `name` and `email`, while keeping the old uppercase arguments working.\n- Pointed the default 1Password license item references at the Moonvault vault.\n\n### Fixed\n\n- Closed editor Format, Insert, and template field menus when clicking outside them.\n\n\n",
+      "assets": {
+        "linux": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.21.11/moonvault_1.21.11_amd64.AppImage",
+          "size": 91268288,
+          "name": "moonvault_1.21.11_amd64.AppImage"
+        },
+        "macos": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.21.11/Moonvault_1.21.11_aarch64.dmg",
+          "size": 9189298,
+          "name": "Moonvault_1.21.11_aarch64.dmg"
+        },
+        "windows": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.21.11/Moonvault_1.21.11_x64_en-US.msi",
+          "size": 5652480,
+          "name": "Moonvault_1.21.11_x64_en-US.msi"
+        }
+      }
+    },
     {
       "version": "v1.21.10",
       "published_at": "2026-06-02T19:43:42Z",
