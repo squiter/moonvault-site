@@ -1,7 +1,29 @@
 {
   "schema_version": 1,
-  "latest": "v1.22.3",
+  "latest": "v1.22.8",
   "releases": [
+    {
+      "version": "v1.22.8",
+      "published_at": "2026-06-05T23:37:13Z",
+      "notes": "### Fixed\n\n- Hardened page navigation so Moonvault repairs any selected page/draft identity mismatch before autosave can write, preventing the Test of links body from appearing under or saving over City of Moon.\n- Expanded regression coverage for the real TestVault link navigation failure across the selected-page repair path.\n",
+      "assets": {
+        "linux": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.22.8/moonvault_1.22.8_amd64.AppImage",
+          "size": 91268288,
+          "name": "moonvault_1.22.8_amd64.AppImage"
+        },
+        "macos": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.22.8/Moonvault_1.22.8_aarch64.dmg",
+          "size": 9192674,
+          "name": "Moonvault_1.22.8_aarch64.dmg"
+        },
+        "windows": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.22.8/Moonvault_1.22.8_x64_en-US.msi",
+          "size": 5652480,
+          "name": "Moonvault_1.22.8_x64_en-US.msi"
+        }
+      }
+    },
     {
       "version": "v1.22.3",
       "published_at": "2026-06-05T15:50:52Z",
