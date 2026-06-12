@@ -1,0 +1,29 @@
+title: Moonvault
+description: News, guides, and development notes for Moonvault, the RPG vault for game masters.
+url: https://moonvaultrpg.com
+baseurl: ""
+lang: en
+timezone: America/Sao_Paulo
+
+permalink: /blog/:year/:month/:day/:title/
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+feed:
+  path: /blog/feed.xml
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      body_class: post-page
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor

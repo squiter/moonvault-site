@@ -223,6 +223,23 @@ body::before {
   margin: 1rem 0 0;
 }
 
+.journal-link {
+  display: inline-block;
+  font-family: "Cinzel", serif;
+  color: var(--moon-gold);
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+.journal-link:hover,
+.journal-link:focus-visible {
+  color: var(--moon-gold-soft);
+  outline: none;
+}
+
 .plan-section,
 .pro-panel {
   text-align: left;
@@ -446,6 +463,290 @@ body::before {
   border-radius: 8px;
 }
 
+/* /blog and post pages */
+
+.blog-page,
+.post-page {
+  display: block;
+  min-height: 100vh;
+  padding: 0 1.25rem;
+  text-align: left;
+}
+
+.blog-shell {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 52rem);
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-masthead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid rgba(168, 123, 74, 0.28);
+}
+
+.blog-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.85rem;
+  color: var(--moon-gold-soft);
+  text-decoration: none;
+}
+
+.blog-brand img {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.38);
+}
+
+.blog-brand span {
+  display: grid;
+  gap: 0.08rem;
+}
+
+.blog-brand strong,
+.blog-brand small,
+.blog-home-link {
+  font-family: "Cinzel", serif;
+  text-transform: uppercase;
+}
+
+.blog-brand strong {
+  font-size: 1rem;
+  letter-spacing: 0.17em;
+}
+
+.blog-brand small {
+  color: var(--moon-parchment-deep);
+  font-size: 0.64rem;
+  letter-spacing: 0.22em;
+}
+
+.blog-home-link {
+  color: var(--moon-parchment-deep);
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-decoration: none;
+}
+
+.blog-brand:hover,
+.blog-home-link:hover {
+  color: var(--moon-gold);
+}
+
+.blog-main {
+  flex: 1;
+  width: 100%;
+  padding: clamp(3.5rem, 9vw, 6rem) 0 4rem;
+}
+
+.blog-intro {
+  max-width: 42rem;
+}
+
+.blog-intro h1,
+.post-header h1 {
+  font-family: "Cinzel", serif;
+  color: var(--moon-gold-soft);
+  font-weight: 700;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.blog-intro h1 {
+  font-size: clamp(2.35rem, 7vw, 4rem);
+  letter-spacing: 0.09em;
+}
+
+.blog-intro > p:last-child,
+.post-deck {
+  color: var(--moon-paper);
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+  line-height: 1.55;
+}
+
+.blog-intro > p:last-child {
+  margin: 1.15rem 0 0;
+  max-width: 38rem;
+}
+
+.blog-main > .ornament {
+  justify-content: flex-start;
+  margin: 2.5rem 0;
+}
+
+.post-list {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.post-card,
+.blog-empty {
+  background: rgba(33, 19, 38, 0.72);
+  border: 1px solid rgba(168, 123, 74, 0.32);
+  border-radius: 8px;
+  padding: clamp(1.4rem, 4vw, 2rem);
+  backdrop-filter: blur(2px);
+}
+
+.post-date {
+  color: var(--moon-muted);
+  font-size: 0.82rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin: 0 0 0.65rem;
+}
+
+.post-card h2,
+.blog-empty h2 {
+  font-family: "Cinzel", serif;
+  color: var(--moon-gold-soft);
+  font-size: clamp(1.35rem, 3vw, 1.75rem);
+  line-height: 1.3;
+  letter-spacing: 0.06em;
+  margin: 0;
+}
+
+.post-card h2 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.post-card h2 a:hover {
+  color: var(--moon-gold);
+}
+
+.post-card > p:not(.post-date),
+.blog-empty > p:last-child {
+  color: var(--moon-paper);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0.85rem 0 1.1rem;
+}
+
+.post-read-more,
+.post-navigation a {
+  font-family: "Cinzel", serif;
+  color: var(--moon-gold);
+  font-size: 0.72rem;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.post-read-more:hover,
+.post-navigation a:hover {
+  color: var(--moon-gold-soft);
+}
+
+.post-header {
+  max-width: 44rem;
+}
+
+.post-header h1 {
+  font-size: clamp(2.1rem, 6vw, 3.5rem);
+  letter-spacing: 0.05em;
+}
+
+.post-deck {
+  color: var(--moon-parchment-deep);
+  margin: 1.1rem 0 0;
+}
+
+.blog-post > .ornament {
+  justify-content: flex-start;
+  margin: 2.5rem 0;
+}
+
+.post-content {
+  color: var(--moon-paper);
+  font-size: clamp(1.14rem, 2.3vw, 1.28rem);
+  line-height: 1.75;
+}
+
+.post-content h2,
+.post-content h3 {
+  font-family: "Cinzel", serif;
+  color: var(--moon-gold-soft);
+  line-height: 1.3;
+}
+
+.post-content h2 {
+  font-size: 1.65rem;
+  letter-spacing: 0.07em;
+  margin: 2.6rem 0 0.8rem;
+}
+
+.post-content h3 {
+  font-size: 1.25rem;
+  letter-spacing: 0.05em;
+  margin: 2rem 0 0.7rem;
+}
+
+.post-content a {
+  color: var(--moon-gold-soft);
+  text-underline-offset: 0.18em;
+}
+
+.post-content blockquote {
+  border-left: 2px solid var(--moon-gold);
+  color: var(--moon-parchment-deep);
+  font-style: italic;
+  margin: 2rem 0;
+  padding: 0.15rem 0 0.15rem 1.4rem;
+}
+
+.post-content code {
+  color: var(--moon-gold-soft);
+  background: rgba(10, 6, 13, 0.65);
+  border-radius: 4px;
+  padding: 0.12em 0.3em;
+}
+
+.post-content pre {
+  overflow-x: auto;
+  background: rgba(10, 6, 13, 0.75);
+  border: 1px solid rgba(168, 123, 74, 0.3);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.post-content pre code {
+  background: none;
+  padding: 0;
+}
+
+.post-navigation {
+  margin-top: 3.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(168, 123, 74, 0.28);
+}
+
+.blog-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.5rem 0 2rem;
+  border-top: 1px solid rgba(168, 123, 74, 0.28);
+  color: var(--moon-muted);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.blog-footer a {
+  color: var(--moon-parchment-deep);
+  text-decoration: none;
+}
+
 @media (max-width: 760px) {
   body {
     padding: 1.5rem 1rem 2rem;
@@ -507,5 +808,36 @@ body::before {
 
   iframe.floatingchat-container {
     display: none !important;
+  }
+
+  .blog-page,
+  .post-page {
+    padding: 0 1rem;
+  }
+
+  .blog-masthead {
+    align-items: flex-start;
+  }
+
+  .blog-brand img {
+    width: 44px;
+    height: 44px;
+  }
+
+  .blog-home-link {
+    padding-top: 0.35rem;
+  }
+
+  .blog-main {
+    padding-top: 3rem;
+  }
+
+  .blog-intro h1,
+  .post-header h1 {
+    overflow-wrap: anywhere;
+  }
+
+  .blog-footer {
+    flex-direction: column;
   }
 }

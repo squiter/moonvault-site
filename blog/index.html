@@ -1,0 +1,43 @@
+---
+layout: default
+title: The Journal
+description: News, guides, and development notes from Moonvault.
+body_class: blog-page
+permalink: /blog/
+---
+<main class="blog-main">
+  <section class="blog-intro" aria-labelledby="journal-title">
+    <p class="eyebrow">From inside the vault</p>
+    <h1 id="journal-title">The Moonvault Journal</h1>
+    <p>
+      App news, release stories, game-master guides, and notes from the making of Moonvault.
+    </p>
+  </section>
+
+  <div class="ornament" aria-hidden="true">
+    <span></span><span class="dot"></span><span></span>
+  </div>
+
+  <section class="post-list" aria-label="Journal entries">
+    {% if site.posts.size > 0 %}
+      {% for post in site.posts %}
+        <article class="post-card">
+          <p class="post-date">{{ post.date | date: "%B %-d, %Y" }}</p>
+          <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+          {% if post.description %}
+            <p>{{ post.description }}</p>
+          {% else %}
+            <p>{{ post.excerpt | strip_html | normalize_whitespace | truncate: 190 }}</p>
+          {% endif %}
+          <a class="post-read-more" href="{{ post.url | relative_url }}">Read entry &rarr;</a>
+        </article>
+      {% endfor %}
+    {% else %}
+      <div class="blog-empty">
+        <p class="eyebrow">The first page awaits</p>
+        <h2>Stories are coming to the journal.</h2>
+        <p>We are preparing the first Moonvault entries. Check back soon.</p>
+      </div>
+    {% endif %}
+  </section>
+</main>
