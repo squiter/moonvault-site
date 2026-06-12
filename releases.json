@@ -1,7 +1,29 @@
 {
   "schema_version": 1,
-  "latest": "v1.25.0",
+  "latest": "v1.25.1",
   "releases": [
+    {
+      "version": "v1.25.1",
+      "published_at": "2026-06-12T02:21:44Z",
+      "notes": "### Added\n\n- Added browser-style Back and Forward page navigation with toolbar buttons, command palette\n  actions, and familiar keyboard shortcuts.\n\n### Changed\n\n- Refined the fantasy date modal so Year, Month, and Day are easier to identify and edit.\n\n### Fixed\n\n- Parsed fantasy date objects correctly in the native vault index so all dated Events appear\n  reliably on their world calendar, including multiple Events on the same day.\n",
+      "assets": {
+        "linux": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.25.1/moonvault_1.25.1_amd64.AppImage",
+          "size": 92505280,
+          "name": "moonvault_1.25.1_amd64.AppImage"
+        },
+        "macos": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.25.1/Moonvault_1.25.1_aarch64.dmg",
+          "size": 10290916,
+          "name": "Moonvault_1.25.1_aarch64.dmg"
+        },
+        "windows": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.25.1/Moonvault_1.25.1_x64_en-US.msi",
+          "size": 6688768,
+          "name": "Moonvault_1.25.1_x64_en-US.msi"
+        }
+      }
+    },
     {
       "version": "v1.25.0",
       "published_at": "2026-06-12T01:59:17Z",
