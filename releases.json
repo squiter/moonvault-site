@@ -1,7 +1,29 @@
 {
   "schema_version": 1,
-  "latest": "v1.27.0",
+  "latest": "v1.28.0",
   "releases": [
+    {
+      "version": "v1.28.0",
+      "published_at": "2026-06-12T19:00:56Z",
+      "notes": "### Fixed\n\n- Preserved the Live editor caret while the fantasy-date picker is open so Insert menu and `/date`\n  selections are written back into the note at the intended position.\n- Replaced the fantasy-date modal's month and day dropdowns with a calendar grid, month navigation,\n  custom weekday labels, and a clearer selected-date summary.\n- Reworked Active Session Mode into a focused section-based console so notes, party, encounters,\n  and quick tools are easier to use during play.\n- Made session notes directly editable and autosaving inside Active Session Mode.\n- Replaced the oversized modal treatment for Active Session Mode and Living Timeline with dedicated\n  focus views, clearer exits, compact timeline filters, and a more readable chronology.\n- Corrected the focus-view header and sidebar action colors and removed a redundant Session console\n  badge.\n\n### Added\n\n- Added the Finish session recap action to normal Session pages so GMs can complete the handoff\n  without opening Active Session Mode.\n- Added a Finish session recap prompt and a \u201cLast time\u201d card that carries the previous dated\n  session's summary into the next Session Mode workspace.\n- Added `@date[Month, Day, Year]` links that open the current world's fantasy calendar on the\n  referenced day without creating a page.\n- Added fantasy calendar date insertion to the editor Insert menu, command palette, and `/date`\n  slash command.\n\n### Changed\n\n- Began decomposing the oversized application module by moving reusable fantasy-date UI and the\n  Living Timeline workspace into focused components.\n- Made Babel's development code-generation mode explicit so large-module transforms remain readable\n  while the remaining application subsystems are extracted.\n- Date insertion now opens the fantasy-date picker before changing the note, instead of immediately\n  inserting a default date.\n- Fantasy date chips now use a calendar icon and can be removed as one unit with Backspace or\n  Delete in the Live editor.\n",
+      "assets": {
+        "linux": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.28.0/moonvault_1.28.0_amd64.AppImage",
+          "size": 92509376,
+          "name": "moonvault_1.28.0_amd64.AppImage"
+        },
+        "macos": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.28.0/Moonvault_1.28.0_aarch64.dmg",
+          "size": 10305058,
+          "name": "Moonvault_1.28.0_aarch64.dmg"
+        },
+        "windows": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.28.0/Moonvault_1.28.0_x64_en-US.msi",
+          "size": 6696960,
+          "name": "Moonvault_1.28.0_x64_en-US.msi"
+        }
+      }
+    },
     {
       "version": "v1.27.0",
       "published_at": "2026-06-12T17:58:39Z",
