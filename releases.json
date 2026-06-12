@@ -1,7 +1,29 @@
 {
   "schema_version": 1,
-  "latest": "v1.26.0",
+  "latest": "v1.27.0",
   "releases": [
+    {
+      "version": "v1.27.0",
+      "published_at": "2026-06-12T17:58:39Z",
+      "notes": "### Added\n\n- Added Pro Active Session Mode with session notes, party status, campaign encounters, random\n  tables, and recent rolls in one focused table-running workspace.\n- Added a Pro Living Timeline that orders world events around the campaign's current in-world date.\n- Added timeline filters for past, current, and future events with direct navigation to the related\n  Markdown pages.\n- Added command palette and contextual page-header actions for both new workflows.\n\n### Changed\n\n- Kept session and timeline workspaces connected to the existing Markdown pages, relationships,\n  encounter snapshots, random tables, roll history, and fantasy calendar instead of introducing\n  separate dashboard-only data.\n",
+      "assets": {
+        "linux": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.27.0/moonvault_1.27.0_amd64.AppImage",
+          "size": 92505280,
+          "name": "moonvault_1.27.0_amd64.AppImage"
+        },
+        "macos": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.27.0/Moonvault_1.27.0_aarch64.dmg",
+          "size": 10299219,
+          "name": "Moonvault_1.27.0_aarch64.dmg"
+        },
+        "windows": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.27.0/Moonvault_1.27.0_x64_en-US.msi",
+          "size": 6696960,
+          "name": "Moonvault_1.27.0_x64_en-US.msi"
+        }
+      }
+    },
     {
       "version": "v1.26.0",
       "published_at": "2026-06-12T17:46:37Z",
