@@ -1,7 +1,29 @@
 {
   "schema_version": 1,
-  "latest": "v1.25.1",
+  "latest": "v1.26.0",
   "releases": [
+    {
+      "version": "v1.26.0",
+      "published_at": "2026-06-12T17:46:37Z",
+      "notes": "### Added\n\n- Added recent pages to the sidebar and command palette so GMs can quickly return to material used\n  during play.\n- Added page type and tag filters alongside full-text sidebar search for faster navigation in larger\n  vaults.\n- Added standalone Map pages with their own map image, linked pins, and Markdown notes.\n- Added a Map Room with separate GM and player-preview modes.\n- Added player-visible map pins so landmarks can be previewed without revealing private GM notes.\n\n### Changed\n\n- Promoted maps into the normal create-page and sidebar workflows.\n- Added an Open Map Room command palette action whenever the current page has a map.\n",
+      "assets": {
+        "linux": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.26.0/moonvault_1.26.0_amd64.AppImage",
+          "size": 92505280,
+          "name": "moonvault_1.26.0_amd64.AppImage"
+        },
+        "macos": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.26.0/Moonvault_1.26.0_aarch64.dmg",
+          "size": 10293226,
+          "name": "Moonvault_1.26.0_aarch64.dmg"
+        },
+        "windows": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.26.0/Moonvault_1.26.0_x64_en-US.msi",
+          "size": 6688768,
+          "name": "Moonvault_1.26.0_x64_en-US.msi"
+        }
+      }
+    },
     {
       "version": "v1.25.1",
       "published_at": "2026-06-12T02:21:44Z",
