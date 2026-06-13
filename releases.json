@@ -1,7 +1,29 @@
 {
   "schema_version": 1,
-  "latest": "v1.31.0",
+  "latest": "v1.32.0",
   "releases": [
+    {
+      "version": "v1.32.0",
+      "published_at": "2026-06-13T21:49:01Z",
+      "notes": "### Added\n\n- Added the campaign prep checklist directly to normal Session editor sidebars, with new tasks\n  targeted to the open session automatically.\n- Added a session-aware command palette action for quickly focusing the prep-task input without\n  leaving the Session page.\n- Bundled an offline WebAssembly OCR fallback with Portuguese and English language models for\n  installed builds that do not have a native Tesseract executable.\n\n### Changed\n\n- Session prep views now show general campaign tasks and tasks for the open session while hiding\n  tasks assigned to other sessions.\n- Monster screenshot import still prefers native Tesseract when available, then automatically uses\n  Moonvault's bundled OCR engine if the native command is unavailable.\n",
+      "assets": {
+        "linux": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.32.0/moonvault_1.32.0_amd64.AppImage",
+          "size": 103507136,
+          "name": "moonvault_1.32.0_amd64.AppImage"
+        },
+        "macos": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.32.0/Moonvault_1.32.0_aarch64.dmg",
+          "size": 21395123,
+          "name": "Moonvault_1.32.0_aarch64.dmg"
+        },
+        "windows": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.32.0/Moonvault_1.32.0_x64_en-US.msi",
+          "size": 17711104,
+          "name": "Moonvault_1.32.0_x64_en-US.msi"
+        }
+      }
+    },
     {
       "version": "v1.31.0",
       "published_at": "2026-06-13T21:36:30Z",
