@@ -1,7 +1,29 @@
 {
   "schema_version": 1,
-  "latest": "v1.32.0",
+  "latest": "v1.32.1",
   "releases": [
+    {
+      "version": "v1.32.1",
+      "published_at": "2026-06-13T23:14:54Z",
+      "notes": "### Added\n\n- Added optional monster nicknames in encounter sidebars so repeated monsters can be identified\n  throughout turn tracking, initiative, and Active Session Mode.\n",
+      "assets": {
+        "linux": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.32.1/moonvault_1.32.1_amd64.AppImage",
+          "size": 103507136,
+          "name": "moonvault_1.32.1_amd64.AppImage"
+        },
+        "macos": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.32.1/Moonvault_1.32.1_aarch64.dmg",
+          "size": 21395966,
+          "name": "Moonvault_1.32.1_aarch64.dmg"
+        },
+        "windows": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.32.1/Moonvault_1.32.1_x64_en-US.msi",
+          "size": 17707008,
+          "name": "Moonvault_1.32.1_x64_en-US.msi"
+        }
+      }
+    },
     {
       "version": "v1.32.0",
       "published_at": "2026-06-13T21:49:01Z",
