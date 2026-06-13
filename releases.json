@@ -1,7 +1,29 @@
 {
   "schema_version": 1,
-  "latest": "v1.30.0",
+  "latest": "v1.31.0",
   "releases": [
+    {
+      "version": "v1.31.0",
+      "published_at": "2026-06-13T21:36:30Z",
+      "notes": "### Fixed\n\n- Preserved every line after Markdown list items when opening and saving content in the Live editor,\n  including pasted statblocks that use `\u2022` bullets and wrapped continuation lines.\n- Preserved explicit line breaks when converting Live editor content back to Markdown.\n- Made `/dr` create its clickable dice roller after a valid formula when the GM presses Space, Tab,\n  or Enter in the Live editor.\n- Moved the Markdown selection-format toolbar below and beside the selection so it no longer\n  intercepts double-clicks.\n- Opened newly created pages directly after command-palette creation, including Monster pages.\n\n### Added\n\n- Added regression coverage for mixed Markdown lists and nonstandard bullet characters.\n",
+      "assets": {
+        "linux": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.31.0/moonvault_1.31.0_amd64.AppImage",
+          "size": 92509376,
+          "name": "moonvault_1.31.0_amd64.AppImage"
+        },
+        "macos": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.31.0/Moonvault_1.31.0_aarch64.dmg",
+          "size": 10310582,
+          "name": "Moonvault_1.31.0_aarch64.dmg"
+        },
+        "windows": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.31.0/Moonvault_1.31.0_x64_en-US.msi",
+          "size": 6696960,
+          "name": "Moonvault_1.31.0_x64_en-US.msi"
+        }
+      }
+    },
     {
       "version": "v1.30.0",
       "published_at": "2026-06-13T16:31:06Z",
