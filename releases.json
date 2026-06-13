@@ -1,7 +1,29 @@
 {
   "schema_version": 1,
-  "latest": "v1.28.0",
+  "latest": "v1.29.0",
   "releases": [
+    {
+      "version": "v1.29.0",
+      "published_at": "2026-06-13T03:46:07Z",
+      "notes": "### Added\n\n- Added page aliases through the `aliases` frontmatter property.\n- Added alias-aware wikilink autocomplete. Choosing an alias inserts\n  `[[Canonical Page Title|Selected Alias]]`, while links written directly with an alias still\n  resolve to the correct page.\n- Added year-only and month-only fantasy calendar links through `/date`, the Insert menu, and the\n  command palette.\n- Added a page-type chooser when creating a page from an unresolved `[[wikilink]]`.\n- Added direct link target and display-text editing in the Live editor.\n\n### Fixed\n\n- Allowed existing Events to switch between exact-day, whole-month, and whole-year dates.\n- Selected the current campaign automatically when creating an Event.\n- Kept the Markdown selection-format toolbar out of the way while editing wikilinks.\n- Made the Relationships panel available beneath the Markdown editor.\n- Kept backlinks, page navigation, and player-safe exports aware of page aliases.\n",
+      "assets": {
+        "linux": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.29.0/moonvault_1.29.0_amd64.AppImage",
+          "size": 92505280,
+          "name": "moonvault_1.29.0_amd64.AppImage"
+        },
+        "macos": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.29.0/Moonvault_1.29.0_aarch64.dmg",
+          "size": 10308062,
+          "name": "Moonvault_1.29.0_aarch64.dmg"
+        },
+        "windows": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.29.0/Moonvault_1.29.0_x64_en-US.msi",
+          "size": 6696960,
+          "name": "Moonvault_1.29.0_x64_en-US.msi"
+        }
+      }
+    },
     {
       "version": "v1.28.0",
       "published_at": "2026-06-12T19:00:56Z",
