@@ -1,7 +1,29 @@
 {
   "schema_version": 1,
-  "latest": "v1.32.1",
+  "latest": "v1.33.0",
   "releases": [
+    {
+      "version": "v1.33.0",
+      "published_at": "2026-06-15T15:26:38Z",
+      "notes": "### Added\n\n- Added encounter-only HP, AC, and initiative bonuses for each combatant, plus a short field for\n  other temporary effects without changing the source character or monster page.\n- Added the current session summary to normal Session pages and Active Session Mode.\n\n### Changed\n\n- Session recap actions now say **Edit summary** after a recap has been saved.\n- macOS releases now include a direct zipped app download, and the public release feed prefers it\n  over the DMG so installing Moonvault does not mount extra desktop disk icons.\n",
+      "assets": {
+        "linux": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.33.0/moonvault_1.33.0_amd64.AppImage",
+          "size": 103503040,
+          "name": "moonvault_1.33.0_amd64.AppImage"
+        },
+        "macos": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.33.0/Moonvault_1.33.0_macOS.app.zip",
+          "size": 19465534,
+          "name": "Moonvault_1.33.0_macOS.app.zip"
+        },
+        "windows": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.33.0/Moonvault_1.33.0_x64_en-US.msi",
+          "size": 17711104,
+          "name": "Moonvault_1.33.0_x64_en-US.msi"
+        }
+      }
+    },
     {
       "version": "v1.32.1",
       "published_at": "2026-06-13T23:14:54Z",
