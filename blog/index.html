@@ -21,16 +21,33 @@ permalink: /blog/
   <section class="post-list" aria-label="Journal entries">
     {% if site.posts.size > 0 %}
       {% for post in site.posts %}
-        <article class="post-card">
-          <p class="post-date">{{ post.date | date: "%B %-d, %Y" }}</p>
-          <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-          {% if post.description %}
-            <p>{{ post.description }}</p>
-          {% else %}
-            <p>{{ post.excerpt | strip_html | normalize_whitespace | truncate: 190 }}</p>
-          {% endif %}
-          <a class="post-read-more" href="{{ post.url | relative_url }}">Read entry &rarr;</a>
-        </article>
+        {% if forloop.first %}
+          <article class="featured-post">
+            <header class="featured-post-header">
+              <p class="eyebrow">Latest entry</p>
+              <p class="post-date">{{ post.date | date: "%B %-d, %Y" }}</p>
+              <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+              {% if post.description %}
+                <p class="featured-post-deck">{{ post.description }}</p>
+              {% endif %}
+            </header>
+            <div class="post-content">
+              {{ post.content }}
+            </div>
+            <a class="post-read-more" href="{{ post.url | relative_url }}">Open this entry &rarr;</a>
+          </article>
+        {% else %}
+          <article class="post-card">
+            <p class="post-date">{{ post.date | date: "%B %-d, %Y" }}</p>
+            <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+            {% if post.description %}
+              <p>{{ post.description }}</p>
+            {% else %}
+              <p>{{ post.excerpt | strip_html | normalize_whitespace | truncate: 320 }}</p>
+            {% endif %}
+            <a class="post-read-more" href="{{ post.url | relative_url }}">Read entry &rarr;</a>
+          </article>
+        {% endif %}
       {% endfor %}
     {% else %}
       <div class="blog-empty">

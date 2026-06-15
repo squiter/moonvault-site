@@ -44,13 +44,34 @@
             <a href="https://ko-fi.com/squiter" rel="noopener">Get Pro on Ko-fi</a>
           </nav>
           <p id="latest-version" class="version-note">Latest builds for macOS, Windows, and Linux.</p>
-          <a class="journal-link" href="/blog/">Read the Moonvault Journal &rarr;</a>
         </div>
       </section>
 
       <div class="ornament" aria-hidden="true">
         <span></span><span class="dot"></span><span></span>
       </div>
+
+      <section class="journal-panel" aria-labelledby="journal-title">
+        <div class="journal-panel-copy">
+          <p class="eyebrow">The Moonvault Journal</p>
+          <h2 id="journal-title">Guides and dispatches from inside the vault</h2>
+          <p>
+            Find game-master guides, release stories, and practical notes for getting more
+            from Moonvault.
+          </p>
+          <a class="journal-action" href="/blog/">Explore the journal &rarr;</a>
+        </div>
+        {% assign latest_post = site.posts.first %}
+        {% if latest_post %}
+          <article class="latest-post">
+            <p class="latest-post-label">Latest entry</p>
+            <p class="latest-post-date">{{ latest_post.date | date: "%B %-d, %Y" }}</p>
+            <h3><a href="{{ latest_post.url | relative_url }}">{{ latest_post.title }}</a></h3>
+            <p>{{ latest_post.description | default: latest_post.excerpt | strip_html | normalize_whitespace }}</p>
+            <a class="latest-post-link" href="{{ latest_post.url | relative_url }}">Read the latest entry &rarr;</a>
+          </article>
+        {% endif %}
+      </section>
 
       <section class="plan-section" aria-labelledby="free-title">
         <div class="section-heading">

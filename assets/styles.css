@@ -223,21 +223,94 @@ body::before {
   margin: 1rem 0 0;
 }
 
-.journal-link {
-  display: inline-block;
-  font-family: "Cinzel", serif;
-  color: var(--moon-gold);
-  font-size: 0.72rem;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  text-decoration: none;
-  margin-top: 1rem;
+.journal-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: clamp(1.5rem, 4vw, 3.5rem);
+  align-items: center;
+  margin: 0 0 clamp(3rem, 8vw, 5rem);
+  padding: clamp(1.6rem, 4vw, 2.6rem);
+  text-align: left;
+  background:
+    linear-gradient(120deg, rgba(74, 45, 87, 0.52), rgba(33, 19, 38, 0.8)),
+    rgba(33, 19, 38, 0.72);
+  border: 1px solid rgba(213, 170, 109, 0.36);
+  border-radius: 12px;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.2);
 }
 
-.journal-link:hover,
-.journal-link:focus-visible {
+.journal-panel h2 {
+  margin: 0;
+  color: var(--moon-gold-soft);
+  font-family: "Cinzel", serif;
+  font-size: clamp(1.45rem, 3vw, 2.1rem);
+  line-height: 1.3;
+  letter-spacing: 0.05em;
+}
+
+.journal-panel-copy > p:not(.eyebrow),
+.latest-post > p:not(.latest-post-label, .latest-post-date) {
+  color: var(--moon-paper);
+  font-size: 1.12rem;
+  line-height: 1.55;
+}
+
+.journal-action,
+.latest-post-link {
+  color: var(--moon-gold);
+  font-family: "Cinzel", serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.journal-action:hover,
+.journal-action:focus-visible,
+.latest-post-link:hover,
+.latest-post-link:focus-visible,
+.latest-post h3 a:hover,
+.latest-post h3 a:focus-visible {
   color: var(--moon-gold-soft);
   outline: none;
+}
+
+.latest-post {
+  padding: clamp(1.25rem, 3vw, 1.8rem);
+  background: rgba(10, 6, 13, 0.38);
+  border: 1px solid rgba(168, 123, 74, 0.3);
+  border-radius: 8px;
+}
+
+.latest-post-label,
+.latest-post-date {
+  margin: 0;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.latest-post-label {
+  color: var(--moon-gold);
+  font-family: "Cinzel", serif;
+}
+
+.latest-post-date {
+  color: var(--moon-muted);
+  margin-top: 0.45rem;
+}
+
+.latest-post h3 {
+  margin: 0.7rem 0 0;
+  font-family: "Cinzel", serif;
+  font-size: clamp(1.25rem, 2.5vw, 1.65rem);
+  line-height: 1.3;
+  letter-spacing: 0.04em;
+}
+
+.latest-post h3 a {
+  color: var(--moon-gold-soft);
+  text-decoration: none;
 }
 
 .plan-section,
@@ -589,6 +662,7 @@ body::before {
 }
 
 .post-card,
+.featured-post,
 .blog-empty {
   background: rgba(33, 19, 38, 0.72);
   border: 1px solid rgba(168, 123, 74, 0.32);
@@ -606,6 +680,7 @@ body::before {
 }
 
 .post-card h2,
+.featured-post h2,
 .blog-empty h2 {
   font-family: "Cinzel", serif;
   color: var(--moon-gold-soft);
@@ -615,12 +690,14 @@ body::before {
   margin: 0;
 }
 
-.post-card h2 a {
+.post-card h2 a,
+.featured-post h2 a {
   color: inherit;
   text-decoration: none;
 }
 
-.post-card h2 a:hover {
+.post-card h2 a:hover,
+.featured-post h2 a:hover {
   color: var(--moon-gold);
 }
 
@@ -645,6 +722,32 @@ body::before {
 .post-read-more:hover,
 .post-navigation a:hover {
   color: var(--moon-gold-soft);
+}
+
+.featured-post {
+  padding: clamp(1.5rem, 5vw, 2.75rem);
+}
+
+.featured-post-header {
+  padding-bottom: 1.75rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid rgba(168, 123, 74, 0.28);
+}
+
+.featured-post-header .eyebrow {
+  margin-bottom: 0.55rem;
+}
+
+.featured-post-deck {
+  margin: 1rem 0 0;
+  color: var(--moon-parchment-deep);
+  font-size: clamp(1.15rem, 2.4vw, 1.35rem);
+  line-height: 1.55;
+}
+
+.featured-post > .post-read-more {
+  display: inline-block;
+  margin-top: 2rem;
 }
 
 .post-header {
@@ -800,7 +903,8 @@ body::before {
 
   .hero-copy,
   .plan-section,
-  .pro-panel {
+  .pro-panel,
+  .journal-panel {
     text-align: center;
   }
 
@@ -825,7 +929,8 @@ body::before {
   }
 
   .feature-grid,
-  .pro-panel {
+  .pro-panel,
+  .journal-panel {
     grid-template-columns: 1fr;
   }
 
