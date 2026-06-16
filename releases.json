@@ -1,7 +1,29 @@
 {
   "schema_version": 1,
-  "latest": "v1.33.0",
+  "latest": "v1.34.0",
   "releases": [
+    {
+      "version": "v1.34.0",
+      "published_at": "2026-06-16T15:18:38Z",
+      "notes": "### Added\n\n- Upgraded Party pages with a richer overview of member HP and AC, current locations, factions,\n  active conditions, recent sessions, and related encounters.\n- Added Settings options for the default editor mode and whether page properties open automatically.\n",
+      "assets": {
+        "linux": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.34.0/moonvault_1.34.0_amd64.AppImage",
+          "size": 103503040,
+          "name": "moonvault_1.34.0_amd64.AppImage"
+        },
+        "macos": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.34.0/Moonvault_1.34.0_macOS.app.zip",
+          "size": 19466996,
+          "name": "Moonvault_1.34.0_macOS.app.zip"
+        },
+        "windows": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.34.0/Moonvault_1.34.0_x64_en-US.msi",
+          "size": 17707008,
+          "name": "Moonvault_1.34.0_x64_en-US.msi"
+        }
+      }
+    },
     {
       "version": "v1.33.0",
       "published_at": "2026-06-15T15:26:38Z",
