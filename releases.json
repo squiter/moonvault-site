@@ -1,7 +1,29 @@
 {
   "schema_version": 1,
-  "latest": "v1.34.0",
+  "latest": "v1.35.0",
   "releases": [
+    {
+      "version": "v1.35.0",
+      "published_at": "2026-06-17T22:40:03Z",
+      "notes": "## Added\n\n- Added smarter command palette page ranking with recency, aliases, exact-title matches, pinned pages, and current-campaign context so large vaults jump to the right page faster.\n- Added vault default settings for new page visibility, new campaign system, and automatic campaign focus behavior.\n- Moved Settings out of the modal and into a dedicated workspace page with section navigation for General, Editor, Vault defaults, Moonvault Pro, and Campaign focus.\n- Added a Party history view that gathers recent sessions, encounters, discovered locations, faction ties, and open prep tasks connected to the party.\n- Added the first localization foundation with a language and locale setting plus initial Settings strings for English and Brazilian Portuguese.\n",
+      "assets": {
+        "linux": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.35.0/moonvault_1.35.0_amd64.AppImage",
+          "size": 103515328,
+          "name": "moonvault_1.35.0_amd64.AppImage"
+        },
+        "macos": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.35.0/Moonvault_1.35.0_macOS.app.zip",
+          "size": 19470519,
+          "name": "Moonvault_1.35.0_macOS.app.zip"
+        },
+        "windows": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.35.0/Moonvault_1.35.0_x64_en-US.msi",
+          "size": 17711104,
+          "name": "Moonvault_1.35.0_x64_en-US.msi"
+        }
+      }
+    },
     {
       "version": "v1.34.0",
       "published_at": "2026-06-16T15:18:38Z",
