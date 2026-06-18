@@ -1,7 +1,29 @@
 {
   "schema_version": 1,
-  "latest": "v1.35.0",
+  "latest": "v1.36.0",
   "releases": [
+    {
+      "version": "v1.36.0",
+      "published_at": "2026-06-18T19:10:11Z",
+      "notes": "### Added\n\n- Expanded the Brazilian Portuguese localization foundation across Settings, the welcome screen,\n  sidebar navigation, page-type labels, and common command palette actions.\n- Added Brazilian Portuguese starter Markdown templates and blank-page scaffolds for new vaults,\n  worlds, campaigns, pages, calendars, encounters, maps, monsters, and random tables.\n",
+      "assets": {
+        "linux": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.36.0/moonvault_1.36.0_amd64.AppImage",
+          "size": 103511232,
+          "name": "moonvault_1.36.0_amd64.AppImage"
+        },
+        "macos": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.36.0/Moonvault_1.36.0_macOS.app.zip",
+          "size": 19475685,
+          "name": "Moonvault_1.36.0_macOS.app.zip"
+        },
+        "windows": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.36.0/Moonvault_1.36.0_x64_en-US.msi",
+          "size": 17719296,
+          "name": "Moonvault_1.36.0_x64_en-US.msi"
+        }
+      }
+    },
     {
       "version": "v1.35.0",
       "published_at": "2026-06-17T22:40:03Z",
