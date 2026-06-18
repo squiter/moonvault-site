@@ -1,7 +1,29 @@
 {
   "schema_version": 1,
-  "latest": "v1.36.0",
+  "latest": "v1.37.0",
   "releases": [
+    {
+      "version": "v1.37.0",
+      "published_at": "2026-06-18T19:21:57Z",
+      "notes": "### Added\n\n- Expanded Brazilian Portuguese coverage across template commands, import command palette actions,\n  update notices, Settings copy, and template editor labels.\n- Added localized Portuguese template titles and descriptions for newly created PT-BR vaults.\n- Added a localization coverage test so supported languages keep matching translation keys.\n\n### Changed\n\n- Reworked Settings into grouped settings sessions for app behavior, writing defaults, vault\n  creation defaults, Moonvault Pro, and campaign focus.\n",
+      "assets": {
+        "linux": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.37.0/moonvault_1.37.0_amd64.AppImage",
+          "size": 103515328,
+          "name": "moonvault_1.37.0_amd64.AppImage"
+        },
+        "macos": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.37.0/Moonvault_1.37.0_macOS.app.zip",
+          "size": 19477099,
+          "name": "Moonvault_1.37.0_macOS.app.zip"
+        },
+        "windows": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.37.0/Moonvault_1.37.0_x64_en-US.msi",
+          "size": 17723392,
+          "name": "Moonvault_1.37.0_x64_en-US.msi"
+        }
+      }
+    },
     {
       "version": "v1.36.0",
       "published_at": "2026-06-18T19:10:11Z",
