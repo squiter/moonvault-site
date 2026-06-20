@@ -1,7 +1,29 @@
 {
   "schema_version": 1,
-  "latest": "v1.37.0",
+  "latest": "v1.38.0",
   "releases": [
+    {
+      "version": "v1.38.0",
+      "published_at": "2026-06-20T00:00:15Z",
+      "notes": "### Added\n\n- Added an Encounter Library for finding and opening prepared battles from the command palette.\n- Added Encounter Remix to copy a saved encounter, restore reusable participant state, preserve its\n  notes, and optionally attach the new encounter to a Session without changing the original.\n- Added complete English and Brazilian Portuguese copy for the new encounter workflow.\n",
+      "assets": {
+        "linux": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.38.0/moonvault_1.38.0_amd64.AppImage",
+          "size": 103515328,
+          "name": "moonvault_1.38.0_amd64.AppImage"
+        },
+        "macos": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.38.0/Moonvault_1.38.0_macOS.app.zip",
+          "size": 19477196,
+          "name": "Moonvault_1.38.0_macOS.app.zip"
+        },
+        "windows": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.38.0/Moonvault_1.38.0_x64_en-US.msi",
+          "size": 17723392,
+          "name": "Moonvault_1.38.0_x64_en-US.msi"
+        }
+      }
+    },
     {
       "version": "v1.37.0",
       "published_at": "2026-06-18T19:21:57Z",
