@@ -1,7 +1,29 @@
 {
   "schema_version": 1,
-  "latest": "v1.40.0",
+  "latest": "v1.41.0",
   "releases": [
+    {
+      "version": "v1.41.0",
+      "published_at": "2026-06-21T15:36:11Z",
+      "notes": "### Changed\n\n- Moved the Encounter Library and Generator Workbench into a compact Tools menu and restored the\n  Calendar, Session, Note, and create-more actions to the top of the sidebar.\n- Reorganized page type, tag, and campaign controls into one collapsible section that still shows\n  the active navigation context while closed.\n- Added English and Brazilian Portuguese copy for the reorganized sidebar controls.\n\n### Fixed\n\n- Added a minimize/expand control to the dice tray so the page list can use more sidebar space.\n- Made the create-more menu scroll within the available window so every page type remains reachable.\n- Made sidebar sizing resilient when update or export notices are visible.\n",
+      "assets": {
+        "linux": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.41.0/moonvault_1.41.0_amd64.AppImage",
+          "size": 103523520,
+          "name": "moonvault_1.41.0_amd64.AppImage"
+        },
+        "macos": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.41.0/Moonvault_1.41.0_macOS.app.zip",
+          "size": 19496073,
+          "name": "Moonvault_1.41.0_macOS.app.zip"
+        },
+        "windows": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.41.0/Moonvault_1.41.0_x64_en-US.msi",
+          "size": 17731584,
+          "name": "Moonvault_1.41.0_x64_en-US.msi"
+        }
+      }
+    },
     {
       "version": "v1.40.0",
       "published_at": "2026-06-20T00:39:22Z",
