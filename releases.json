@@ -1,7 +1,29 @@
 {
   "schema_version": 1,
-  "latest": "v1.41.0",
+  "latest": "v1.41.1",
   "releases": [
+    {
+      "version": "v1.41.1",
+      "published_at": "2026-06-21T15:54:49Z",
+      "notes": "### Changed\n\n- Grouped page navigation, save/pin status, editor mode, and page actions into a clearer toolbar.\n- Moved Tools out of the vault/settings header and into the search/navigation utility cluster.\n- Consolidated player visibility, PDF export, and page deletion under one localized Page menu.\n\n### Fixed\n\n- Fixed Page actions being painted beneath the properties and editor rows.\n- Made Create, Filters, and Tools menus mutually exclusive so sidebar dropdowns no longer overlap.\n- Added bounded scrolling and stronger stacking for long action menus.\n",
+      "assets": {
+        "linux": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.41.1/moonvault_1.41.1_amd64.AppImage",
+          "size": 103527616,
+          "name": "moonvault_1.41.1_amd64.AppImage"
+        },
+        "macos": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.41.1/Moonvault_1.41.1_macOS.app.zip",
+          "size": 19495633,
+          "name": "Moonvault_1.41.1_macOS.app.zip"
+        },
+        "windows": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.41.1/Moonvault_1.41.1_x64_en-US.msi",
+          "size": 17731584,
+          "name": "Moonvault_1.41.1_x64_en-US.msi"
+        }
+      }
+    },
     {
       "version": "v1.41.0",
       "published_at": "2026-06-21T15:36:11Z",
