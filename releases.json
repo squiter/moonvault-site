@@ -1,7 +1,29 @@
 {
   "schema_version": 1,
-  "latest": "v1.41.2",
+  "latest": "v1.42.0",
   "releases": [
+    {
+      "version": "v1.42.0",
+      "published_at": "2026-06-22T17:19:42Z",
+      "notes": "### Added\n\n- Added a local `playerEmail` field to PC sheets so calendar invites can include the people playing\n  each character without requiring Moonvault accounts.\n- Added a Session invite review with date, time, duration, location, description, attendee emails,\n  and clear warnings for PCs that still need a player email.\n- Added Google Calendar handoff and portable `.ics` export from Session pages and the command\n  palette, with English and Brazilian Portuguese copy.\n\n### Changed\n\n- Saved real-world invite details in Session frontmatter so GMs can revise and export the same\n  schedule again without re-entering it.\n",
+      "assets": {
+        "linux": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.42.0/moonvault_1.42.0_amd64.AppImage",
+          "size": 103527616,
+          "name": "moonvault_1.42.0_amd64.AppImage"
+        },
+        "macos": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.42.0/Moonvault_1.42.0_macOS.app.zip",
+          "size": 19497922,
+          "name": "Moonvault_1.42.0_macOS.app.zip"
+        },
+        "windows": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.42.0/Moonvault_1.42.0_x64_en-US.msi",
+          "size": 17739776,
+          "name": "Moonvault_1.42.0_x64_en-US.msi"
+        }
+      }
+    },
     {
       "version": "v1.41.2",
       "published_at": "2026-06-21T21:30:34Z",
