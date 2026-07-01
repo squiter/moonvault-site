@@ -1,7 +1,29 @@
 {
   "schema_version": 1,
-  "latest": "v1.54.0",
+  "latest": "v1.55.0",
   "releases": [
+    {
+      "version": "v1.55.0",
+      "published_at": "2026-07-01T21:16:32Z",
+      "notes": "### Added\n\n- Expanded English and pt-BR localization for page creation, campaign-required creation prompts,\n  Template Studio create/rename/delete dialogs, session wrap-up copy, and session/exploration\n  command palette actions.\n- Added a pt-BR workflow smoke test covering creation, Template Studio, session wrap-up, and\n  exploration command copy.\n",
+      "assets": {
+        "linux": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.55.0/moonvault_1.55.0_amd64.AppImage",
+          "size": 103584960,
+          "name": "moonvault_1.55.0_amd64.AppImage"
+        },
+        "macos": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.55.0/Moonvault_1.55.0_macOS.app.zip",
+          "size": 19536042,
+          "name": "Moonvault_1.55.0_macOS.app.zip"
+        },
+        "windows": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.55.0/Moonvault_1.55.0_x64_en-US.msi",
+          "size": 17780736,
+          "name": "Moonvault_1.55.0_x64_en-US.msi"
+        }
+      }
+    },
     {
       "version": "v1.54.0",
       "published_at": "2026-07-01T15:00:50Z",
