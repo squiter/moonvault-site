@@ -1,7 +1,29 @@
 {
   "schema_version": 1,
-  "latest": "v1.52.0",
+  "latest": "v1.53.0",
   "releases": [
+    {
+      "version": "v1.53.0",
+      "published_at": "2026-07-01T03:02:17Z",
+      "notes": "### Added\n\n- Added drag-and-drop sidebar page-section ordering so GMs can move high-priority groups like PCs\n  to the top and keep them there per vault.\n- Added remembered collapsed state for page-section headers and the Templates header.\n\n### Changed\n\n- Page-type filters now follow the GM's saved sidebar section order.\n",
+      "assets": {
+        "linux": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.53.0/moonvault_1.53.0_amd64.AppImage",
+          "size": 103584960,
+          "name": "moonvault_1.53.0_amd64.AppImage"
+        },
+        "macos": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.53.0/Moonvault_1.53.0_macOS.app.zip",
+          "size": 19534662,
+          "name": "Moonvault_1.53.0_macOS.app.zip"
+        },
+        "windows": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.53.0/Moonvault_1.53.0_x64_en-US.msi",
+          "size": 17776640,
+          "name": "Moonvault_1.53.0_x64_en-US.msi"
+        }
+      }
+    },
     {
       "version": "v1.52.0",
       "published_at": "2026-07-01T02:40:41Z",
