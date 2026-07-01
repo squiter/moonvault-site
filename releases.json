@@ -1,7 +1,29 @@
 {
   "schema_version": 1,
-  "latest": "v1.55.0",
+  "latest": "v1.56.0",
   "releases": [
+    {
+      "version": "v1.56.0",
+      "published_at": "2026-07-01T21:30:32Z",
+      "notes": "### Added\n\n- Added a local Moonvault user guide covering vault storage, backups, safe sync expectations,\n  imports and OCR review, releases and updates, Pro licensing, and player-safe sharing.\n- Added an **Open Moonvault guide** command palette action and a Settings help card so GMs can find\n  the guide without opening the repository.\n- Added English and pt-BR guide content plus tests that verify every supported language covers the\n  required operational topics.\n",
+      "assets": {
+        "linux": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.56.0/moonvault_1.56.0_amd64.AppImage",
+          "size": 103580864,
+          "name": "moonvault_1.56.0_amd64.AppImage"
+        },
+        "macos": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.56.0/Moonvault_1.56.0_macOS.app.zip",
+          "size": 19417392,
+          "name": "Moonvault_1.56.0_macOS.app.zip"
+        },
+        "windows": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.56.0/Moonvault_1.56.0_x64_en-US.msi",
+          "size": 17784832,
+          "name": "Moonvault_1.56.0_x64_en-US.msi"
+        }
+      }
+    },
     {
       "version": "v1.55.0",
       "published_at": "2026-07-01T21:16:32Z",
