@@ -1,7 +1,29 @@
 {
   "schema_version": 1,
-  "latest": "v1.53.2",
+  "latest": "v1.54.0",
   "releases": [
+    {
+      "version": "v1.54.0",
+      "published_at": "2026-07-01T15:00:50Z",
+      "notes": "### Added\n\n- Added Template Studio defaults so page-type templates can be marked as the automatic starting\n  template for new pages of that type.\n- Added default-template actions in the template header, template context menu, command palette,\n  sidebar labels, and create-page template picker.\n",
+      "assets": {
+        "linux": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.54.0/moonvault_1.54.0_amd64.AppImage",
+          "size": 103584960,
+          "name": "moonvault_1.54.0_amd64.AppImage"
+        },
+        "macos": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.54.0/Moonvault_1.54.0_macOS.app.zip",
+          "size": 19415019,
+          "name": "Moonvault_1.54.0_macOS.app.zip"
+        },
+        "windows": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.54.0/Moonvault_1.54.0_x64_en-US.msi",
+          "size": 17780736,
+          "name": "Moonvault_1.54.0_x64_en-US.msi"
+        }
+      }
+    },
     {
       "version": "v1.53.2",
       "published_at": "2026-07-01T03:09:31Z",
