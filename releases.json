@@ -1,7 +1,29 @@
 {
   "schema_version": 1,
-  "latest": "v1.57.3",
+  "latest": "v1.57.4",
   "releases": [
+    {
+      "version": "v1.57.4",
+      "published_at": "2026-07-02T16:13:03Z",
+      "notes": "### Added\n\n- Added press-and-hold grid nudging so calibrated grids can move smoothly instead of one pixel per\n  click.\n- Added brush-style fog painting while dragging across the map, plus a cover-all fog command.\n\n### Fixed\n\n- Fixed the Map Room pin list layout after adding separate edit and remove actions.\n",
+      "assets": {
+        "linux": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.57.4/moonvault_1.57.4_amd64.AppImage",
+          "size": 103597248,
+          "name": "moonvault_1.57.4_amd64.AppImage"
+        },
+        "macos": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.57.4/Moonvault_1.57.4_macOS.app.zip",
+          "size": 19553054,
+          "name": "Moonvault_1.57.4_macOS.app.zip"
+        },
+        "windows": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.57.4/Moonvault_1.57.4_x64_en-US.msi",
+          "size": 17797120,
+          "name": "Moonvault_1.57.4_x64_en-US.msi"
+        }
+      }
+    },
     {
       "version": "v1.57.3",
       "published_at": "2026-07-02T16:04:23Z",
