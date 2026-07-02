@@ -1,7 +1,29 @@
 {
   "schema_version": 1,
-  "latest": "v1.56.1",
+  "latest": "v1.57.0",
   "releases": [
+    {
+      "version": "v1.57.0",
+      "published_at": "2026-07-02T15:42:23Z",
+      "notes": "### Added\n\n- Added square and hex grid overlays to Map Room for uploaded map images.\n- Added grid calibration controls for grid type, hex orientation, cell size, offset, visibility, and\n  opacity.\n- Saved uploaded-map grid calibration in readable `mapGrid` frontmatter without changing the\n  original image.\n- Added English and pt-BR copy for Map Room grid controls and the command palette Map Room action.\n",
+      "assets": {
+        "linux": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.57.0/moonvault_1.57.0_amd64.AppImage",
+          "size": 103597248,
+          "name": "moonvault_1.57.0_amd64.AppImage"
+        },
+        "macos": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.57.0/Moonvault_1.57.0_macOS.app.zip",
+          "size": 19430223,
+          "name": "Moonvault_1.57.0_macOS.app.zip"
+        },
+        "windows": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.57.0/Moonvault_1.57.0_x64_en-US.msi",
+          "size": 17797120,
+          "name": "Moonvault_1.57.0_x64_en-US.msi"
+        }
+      }
+    },
     {
       "version": "v1.56.1",
       "published_at": "2026-07-02T14:09:00Z",
