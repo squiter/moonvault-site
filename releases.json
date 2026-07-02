@@ -1,7 +1,29 @@
 {
   "schema_version": 1,
-  "latest": "v1.56.0",
+  "latest": "v1.56.1",
   "releases": [
+    {
+      "version": "v1.56.1",
+      "published_at": "2026-07-02T14:09:00Z",
+      "notes": "### Changed\n\n- Expanded the in-app Moonvault guide from short operational notes into deeper workflow entries covering workspace orientation, vault safety, page graphs, Template Studio, imports/OCR, encounters, sessions, calendars, maps, and player-safe sharing.\n- Added a guide search box, result count, no-results state, and table of contents so GMs can find advanced workflow help without scrolling through the whole guide.\n- Replaced the fake screenshot placeholder frame with honest where-to-look callouts so guide panels no longer imply incorrect captured app screenshots.\n",
+      "assets": {
+        "linux": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.56.1/moonvault_1.56.1_amd64.AppImage",
+          "size": 103597248,
+          "name": "moonvault_1.56.1_amd64.AppImage"
+        },
+        "macos": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.56.1/Moonvault_1.56.1_macOS.app.zip",
+          "size": 19427458,
+          "name": "Moonvault_1.56.1_macOS.app.zip"
+        },
+        "windows": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.56.1/Moonvault_1.56.1_x64_en-US.msi",
+          "size": 17788928,
+          "name": "Moonvault_1.56.1_x64_en-US.msi"
+        }
+      }
+    },
     {
       "version": "v1.56.0",
       "published_at": "2026-07-01T21:30:32Z",
