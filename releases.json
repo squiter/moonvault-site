@@ -1,7 +1,29 @@
 {
   "schema_version": 1,
-  "latest": "v1.57.1",
+  "latest": "v1.57.2",
   "releases": [
+    {
+      "version": "v1.57.2",
+      "published_at": "2026-07-02T16:02:15Z",
+      "notes": "### Added\n\n- Added first-pass fog-of-war painting for uploaded map grids, with GM-only hide/reveal cell\n  controls saved in `mapFog` frontmatter.\n- Added an edit action for existing map pins so GMs can convert pins between page links and notes\n  and toggle player visibility after placing them.\n\n### Fixed\n\n- Fixed adding a map pin from Map Room so the pin modal no longer closes the map underneath it.\n",
+      "assets": {
+        "linux": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.57.2/moonvault_1.57.2_amd64.AppImage",
+          "size": 103597248,
+          "name": "moonvault_1.57.2_amd64.AppImage"
+        },
+        "macos": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.57.2/Moonvault_1.57.2_macOS.app.zip",
+          "size": 19431016,
+          "name": "Moonvault_1.57.2_macOS.app.zip"
+        },
+        "windows": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.57.2/Moonvault_1.57.2_x64_en-US.msi",
+          "size": 17797120,
+          "name": "Moonvault_1.57.2_x64_en-US.msi"
+        }
+      }
+    },
     {
       "version": "v1.57.1",
       "published_at": "2026-07-02T15:54:06Z",
