@@ -1,7 +1,29 @@
 {
   "schema_version": 1,
-  "latest": "v1.60.2",
+  "latest": "v1.60.3",
   "releases": [
+    {
+      "version": "v1.60.3",
+      "published_at": "2026-07-05T23:02:15Z",
+      "notes": "### Added\n\n- Added previous and next Session navigation by campaign date in the Session header, sidebar, and\n  command palette.\n- Added month-title actions on fantasy calendars so GMs can create month-level Lore, Notes, or\n  Events with the fantasy date already filled in.\n",
+      "assets": {
+        "linux": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.60.3/moonvault_1.60.3_amd64.AppImage",
+          "size": 107336896,
+          "name": "moonvault_1.60.3_amd64.AppImage"
+        },
+        "macos": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.60.3/Moonvault_1.60.3_macOS.app.zip",
+          "size": 20883977,
+          "name": "Moonvault_1.60.3_macOS.app.zip"
+        },
+        "windows": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.60.3/Moonvault_1.60.3_x64_en-US.msi",
+          "size": 19095552,
+          "name": "Moonvault_1.60.3_x64_en-US.msi"
+        }
+      }
+    },
     {
       "version": "v1.60.2",
       "published_at": "2026-07-05T22:29:08Z",
