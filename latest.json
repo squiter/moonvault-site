@@ -1,0 +1,23 @@
+{
+  "version": "v1.60.0",
+  "notes": "### Added\n\n- Added a Settings and command palette **Back up vault** action that creates a timestamped zip of\n  the complete vault folder beside the vault in `Moonvault Backups`.\n- Added native updater wiring so Moonvault backs up the open vault before installing an available\n  signed app update and restarting.\n- Added release workflow support for Tauri updater signing secrets and a mirrored `latest.json`\n  updater feed with bundle signatures.\n\n### Changed\n\n- Updated English and pt-BR guide copy to point GMs at the built-in backup workflow before imports,\n  prep sprints, and app updates.\n- Updated the Moonvault Pro Settings copy for the new Moonvault Premium purchase, claim-page, and\n  lost-key recovery flow while keeping offline `MV1...` license activation.\n- Expanded the release test battery with backup, updater, and updater-feed checks.\n\n### Fixed\n\n- Fixed Live editor paste so copied Moonvault formatting and wikilinks survive when moving content\n  between pages.\n- Fixed Live preview image rendering so sidebar/frontmatter edits do not turn image Markdown back\n  into visible `![...](...)` text.\n- Fixed nested bullet list editing so Tab/Shift+Tab and empty nested items keep Markdown and Live\n  editor sublists properly indented.\n- Fixed selecting text and typing `[[` so it creates a wikilink instead of replacing the selected\n  text in Markdown and Live editor modes.\n",
+  "pub_date": "2026-07-05T07:35:43Z",
+  "platforms": {
+    "linux-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTUVBsMXBrQkpNeGZ2TDVIOXNWUVIzcktRb1M4MnFOeXB5QjE2aU1pdjBOTzljYzNSUTUrbnJKQTliRVBHMWZZcVRsZTNvYXY3NExXRFJpbXhldnZlM0U3TXE1LzJqaGdFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMjM2NDUyCWZpbGU6bW9vbnZhdWx0XzEuNjAuMF9hbWQ2NC5BcHBJbWFnZS50YXIuZ3oKV1RNQURXUXhUM1hKSVJScWZ0REVOdVFJM25iYnRYNHFZbXRZd1QvazI2akR2YjJPcGdPYjBoaWtlb3oxKzNaNTNaNzZVVnQ4cGxCTEJwY2JTRm5RREE9PQo=",
+      "url": "https://github.com/squiter/moonvault-site/releases/download/v1.60.0/moonvault_1.60.0_amd64.AppImage.tar.gz"
+    },
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTUVBsMXBrQkpNeFlNWEJjZjdkOEh1WUxJTE90c0JIckQrMUdLZ2FZUERGYjJFTWloNEp3MG1ZZll5SWU3cVZtZ0hKTkgzWGxDMjRRcHVtdHhSZ29GZXdiby9WeE8rd2dzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMjM2ODAxCWZpbGU6TW9vbnZhdWx0XzEuNjAuMF94NjRfZW4tVVMubXNpLnppcApvRmFkTlBheVY0dStDcGJwK1VFdlo5ZWJuYlJaQmRMWHkwVDVSSzR4Q3dnVkhSUTBIdjVwcEVTNmlDeXRISlhKZGF3cjRDeUlHdWhYVys5T0p6Sy9Bdz09Cg==",
+      "url": "https://github.com/squiter/moonvault-site/releases/download/v1.60.0/Moonvault_1.60.0_x64_en-US.msi.zip"
+    },
+    "darwin-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTUVBsMXBrQkpNeFFoQUVkY3M5RUJ1RjZMbi9semloWUNlV05JMTdDckt2d1A4UnpXUTE4RUVLNFlRKzRjd09tV3BEU09nNmc5byt4SytjYWxBUWdHK2pCZWZqSGQrQ1E4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMjM1OTkxCWZpbGU6TW9vbnZhdWx0LmFwcC50YXIuZ3oKUzdaNURXb1h6NXAzTHNPbHpJWWxZTlJtWU5oWlNaZk9OUFZiTUsyT3VmU0lrWGFxU1JveEJxOXFkQ2ZVTkh2MS9TcUUwc0ZwZXVqWmxFTEIwdVIzRGc9PQo=",
+      "url": "https://github.com/squiter/moonvault-site/releases/download/v1.60.0/Moonvault_aarch64.app.tar.gz"
+    },
+    "darwin-aarch64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTUVBsMXBrQkpNeFFoQUVkY3M5RUJ1RjZMbi9semloWUNlV05JMTdDckt2d1A4UnpXUTE4RUVLNFlRKzRjd09tV3BEU09nNmc5byt4SytjYWxBUWdHK2pCZWZqSGQrQ1E4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMjM1OTkxCWZpbGU6TW9vbnZhdWx0LmFwcC50YXIuZ3oKUzdaNURXb1h6NXAzTHNPbHpJWWxZTlJtWU5oWlNaZk9OUFZiTUsyT3VmU0lrWGFxU1JveEJxOXFkQ2ZVTkh2MS9TcUUwc0ZwZXVqWmxFTEIwdVIzRGc9PQo=",
+      "url": "https://github.com/squiter/moonvault-site/releases/download/v1.60.0/Moonvault_aarch64.app.tar.gz"
+    }
+  }
+}

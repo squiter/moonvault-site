@@ -1,7 +1,29 @@
 {
   "schema_version": 1,
-  "latest": "v1.59.0",
+  "latest": "v1.60.0",
   "releases": [
+    {
+      "version": "v1.60.0",
+      "published_at": "2026-07-05T07:35:43Z",
+      "notes": "### Added\n\n- Added a Settings and command palette **Back up vault** action that creates a timestamped zip of\n  the complete vault folder beside the vault in `Moonvault Backups`.\n- Added native updater wiring so Moonvault backs up the open vault before installing an available\n  signed app update and restarting.\n- Added release workflow support for Tauri updater signing secrets and a mirrored `latest.json`\n  updater feed with bundle signatures.\n\n### Changed\n\n- Updated English and pt-BR guide copy to point GMs at the built-in backup workflow before imports,\n  prep sprints, and app updates.\n- Updated the Moonvault Pro Settings copy for the new Moonvault Premium purchase, claim-page, and\n  lost-key recovery flow while keeping offline `MV1...` license activation.\n- Expanded the release test battery with backup, updater, and updater-feed checks.\n\n### Fixed\n\n- Fixed Live editor paste so copied Moonvault formatting and wikilinks survive when moving content\n  between pages.\n- Fixed Live preview image rendering so sidebar/frontmatter edits do not turn image Markdown back\n  into visible `![...](...)` text.\n- Fixed nested bullet list editing so Tab/Shift+Tab and empty nested items keep Markdown and Live\n  editor sublists properly indented.\n- Fixed selecting text and typing `[[` so it creates a wikilink instead of replacing the selected\n  text in Markdown and Live editor modes.\n",
+      "assets": {
+        "linux": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.60.0/moonvault_1.60.0_amd64.AppImage",
+          "size": 107295936,
+          "name": "moonvault_1.60.0_amd64.AppImage"
+        },
+        "macos": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.60.0/Moonvault_1.60.0_macOS.app.zip",
+          "size": 21008970,
+          "name": "Moonvault_1.60.0_macOS.app.zip"
+        },
+        "windows": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.60.0/Moonvault_1.60.0_x64_en-US.msi",
+          "size": 19070976,
+          "name": "Moonvault_1.60.0_x64_en-US.msi"
+        }
+      }
+    },
     {
       "version": "v1.59.0",
       "published_at": "2026-07-04T02:33:37Z",
