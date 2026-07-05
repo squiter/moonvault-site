@@ -1,7 +1,29 @@
 {
   "schema_version": 1,
-  "latest": "v1.60.0",
+  "latest": "v1.60.1",
   "releases": [
+    {
+      "version": "v1.60.1",
+      "published_at": "2026-07-05T20:18:49Z",
+      "notes": "### Fixed\n\n- Fixed nested Markdown bullet lists in Live preview so switching from Markdown mode back to Live\n  mode keeps indented subitems nested instead of flattening them into the surrounding session notes.\n",
+      "assets": {
+        "linux": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.60.1/moonvault_1.60.1_amd64.AppImage",
+          "size": 107332800,
+          "name": "moonvault_1.60.1_amd64.AppImage"
+        },
+        "macos": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.60.1/Moonvault_1.60.1_macOS.app.zip",
+          "size": 20884144,
+          "name": "Moonvault_1.60.1_macOS.app.zip"
+        },
+        "windows": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.60.1/Moonvault_1.60.1_x64_en-US.msi",
+          "size": 19095552,
+          "name": "Moonvault_1.60.1_x64_en-US.msi"
+        }
+      }
+    },
     {
       "version": "v1.60.0",
       "published_at": "2026-07-05T07:35:43Z",
