@@ -1,23 +1,23 @@
 ---
 ---
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#120b17" />
-    <title>Moonvault — Download the RPG vault for game masters</title>
-    <meta name="description" content="Download Moonvault for macOS, Windows, and Linux. Moonvault has a forever free version and a lifetime Pro license for Ko-fi supporters." />
+    <title>Moonvault — Baixe o cofre de RPG para mestres</title>
+    <meta name="description" content="Baixe o Moonvault para macOS, Windows e Linux. O Moonvault tem uma versão gratuita para sempre e uma licença Pro vitalícia para apoiadores no Ko-fi." />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://moonvaultrpg.com/" />
+    <link rel="canonical" href="https://moonvaultrpg.com/pt-BR/" />
     <link rel="alternate" hreflang="en" href="https://moonvaultrpg.com/" />
     <link rel="alternate" hreflang="pt-BR" href="https://moonvaultrpg.com/pt-BR/" />
     <link rel="alternate" hreflang="x-default" href="https://moonvaultrpg.com/" />
     <meta property="og:title" content="Moonvault" />
-    <meta property="og:description" content="Download Moonvault for macOS, Windows, and Linux. Forever free, with a lifetime Pro license for Ko-fi supporters." />
+    <meta property="og:description" content="Baixe o Moonvault para macOS, Windows e Linux. Grátis para sempre, com uma licença Pro vitalícia para apoiadores no Ko-fi." />
     <meta property="og:image" content="/assets/moonvault.png" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://moonvaultrpg.com/" />
+    <meta property="og:url" content="https://moonvaultrpg.com/pt-BR/" />
     <link rel="icon" type="image/png" href="/assets/moonvault.png" />
     <link rel="apple-touch-icon" href="/assets/moonvault.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -32,24 +32,11 @@
 
         if (requestedLanguage === "en" || requestedLanguage === "pt-BR") {
           localStorage.setItem(LANGUAGE_KEY, requestedLanguage);
-          if (requestedLanguage === "pt-BR") {
-            window.location.replace("/pt-BR/");
+          if (requestedLanguage === "en") {
+            window.location.replace("/");
           } else if (window.location.search) {
             window.history.replaceState(null, "", window.location.pathname);
           }
-          return;
-        }
-
-        const preferredLanguage = localStorage.getItem(LANGUAGE_KEY);
-        const browserLanguages = navigator.languages && navigator.languages.length
-          ? navigator.languages
-          : [navigator.language || ""];
-        const shouldUsePortuguese =
-          preferredLanguage === "pt-BR" ||
-          (!preferredLanguage && browserLanguages.some((language) => language.toLowerCase().startsWith("pt")));
-
-        if (shouldUsePortuguese) {
-          window.location.replace("/pt-BR/");
         }
       })();
     </script>
@@ -63,23 +50,24 @@
           </div>
         </div>
         <div class="hero-copy">
-          <nav class="language-switcher" aria-label="Language options">
-            <a aria-current="page" href="/?lang=en">EN</a>
-            <a href="/pt-BR/?lang=pt-BR" lang="pt-BR">PT-BR</a>
+          <nav class="language-switcher" aria-label="Opções de idioma">
+            <a href="/?lang=en">EN</a>
+            <a aria-current="page" href="/pt-BR/?lang=pt-BR" lang="pt-BR">PT-BR</a>
           </nav>
-          <p class="eyebrow">Now available</p>
+          <p class="eyebrow">Já disponível</p>
           <h1 id="moonvault-title" class="title">Moonvault</h1>
-          <p class="tagline">A vault for the game master.</p>
+          <p class="tagline">Um cofre para quem mestra.</p>
           <p class="intro">
-            Download Moonvault and keep your tabletop RPG campaigns, notes, and session prep
-            close at hand. The forever free version is ready to use, and Moonvault Pro now
-            includes reusable prep templates and pinned pages for faster table navigation.
+            Baixe o Moonvault e mantenha suas campanhas de RPG de mesa, anotações,
+            preparação de sessões e atalhos de jogo sempre por perto. A versão gratuita
+            continua pronta para usar, e o Moonvault Pro já inclui modelos reutilizáveis
+            de preparo e páginas fixadas para navegar mais rápido durante a mesa.
           </p>
-          <nav class="links download-links" aria-label="Download Moonvault">
-            <a class="primary-action" href="/releases/">Download Moonvault</a>
-            <a href="https://ko-fi.com/squiter" rel="noopener">Get Pro on Ko-fi</a>
+          <nav class="links download-links" aria-label="Baixar Moonvault">
+            <a class="primary-action" href="/releases/">Baixar Moonvault</a>
+            <a href="https://ko-fi.com/squiter" rel="noopener">Pegar o Pro no Ko-fi</a>
           </nav>
-          <p id="latest-version" class="version-note">Latest builds for macOS, Windows, and Linux.</p>
+          <p id="latest-version" class="version-note">Versões mais recentes para macOS, Windows e Linux.</p>
         </div>
       </section>
 
@@ -90,62 +78,62 @@
       <section class="journal-panel" aria-labelledby="journal-title">
         <div class="journal-panel-copy">
           <p class="eyebrow">The Moonvault Journal</p>
-          <h2 id="journal-title">Guides and dispatches from inside the vault</h2>
+          <h2 id="journal-title">Guias e relatos do lado de dentro do cofre</h2>
           <p>
-            Find game-master guides, release stories, and practical notes for getting more
-            from Moonvault.
+            O blog ainda está em inglês por enquanto, com guias para mestres,
+            histórias de lançamento e notas práticas para aproveitar melhor o Moonvault.
           </p>
-          <a class="journal-action" href="/blog/">Explore the journal &rarr;</a>
+          <a class="journal-action" href="/blog/">Explorar o journal em inglês &rarr;</a>
         </div>
         {% assign latest_post = site.posts.first %}
         {% if latest_post %}
           <article class="latest-post">
-            <p class="latest-post-label">Latest entry</p>
+            <p class="latest-post-label">Última entrada</p>
             <p class="latest-post-date">{{ latest_post.date | date: "%B %-d, %Y" }}</p>
             <h3><a href="{{ latest_post.url | relative_url }}">{{ latest_post.title }}</a></h3>
             <p>{{ latest_post.description | default: latest_post.excerpt | strip_html | normalize_whitespace }}</p>
-            <a class="latest-post-link" href="{{ latest_post.url | relative_url }}">Read the latest entry &rarr;</a>
+            <a class="latest-post-link" href="{{ latest_post.url | relative_url }}">Ler a entrada em inglês &rarr;</a>
           </article>
         {% endif %}
       </section>
 
       <section class="plan-section" aria-labelledby="free-title">
         <div class="section-heading">
-          <p class="eyebrow">Forever free</p>
-          <h2 id="free-title">What you can use today</h2>
+          <p class="eyebrow">Grátis para sempre</p>
+          <h2 id="free-title">O que você pode usar hoje</h2>
         </div>
         <ul class="feature-grid">
           <li>
-            <strong>Campaign vaults</strong>
-            Organize your game material around the campaigns you are actively running.
+            <strong>Cofres de campanha</strong>
+            Organize seu material de jogo em torno das campanhas que você está mestrando agora.
           </li>
           <li>
-            <strong>Markdown notes</strong>
-            Write prep, lore, handouts, lists, quotes, tables, and code-style blocks in a flexible editor.
+            <strong>Anotacoes em Markdown</strong>
+            Escreva preparo, lore, handouts, listas, falas, tabelas e blocos de código em um editor flexível.
           </li>
           <li>
-            <strong>Live editing tools</strong>
-            Use compact formatting and insert menus without leaving your writing flow.
+            <strong>Ferramentas de edicao ao vivo</strong>
+            Use menus compactos de formatação e inserção sem sair do fluxo de escrita.
           </li>
           <li>
-            <strong>Campaign focus</strong>
-            Hide other campaigns when you want a cleaner workspace for the current table.
+            <strong>Foco por campanha</strong>
+            Oculte outras campanhas quando quiser um espaço de trabalho mais limpo para a mesa atual.
           </li>
           <li>
-            <strong>Desktop downloads</strong>
-            Install stable builds for macOS, Windows, and Linux from the public release page.
+            <strong>Downloads para desktop</strong>
+            Instale versões estáveis para macOS, Windows e Linux pela página pública de lançamentos.
           </li>
           <li>
-            <strong>Built-in updates</strong>
-            Check for new Moonvault releases from inside the app as the vault keeps improving.
+            <strong>Atualizacoes integradas</strong>
+            Confira novas versões do Moonvault dentro do app enquanto o cofre continua evoluindo.
           </li>
           <li>
-            <strong>Pro prep templates</strong>
-            Supporters can create pages from reusable session, NPC, monster, and location templates.
+            <strong>Modelos Pro de preparo</strong>
+            Apoiadores podem criar páginas a partir de modelos reutilizáveis de sessão, NPC, monstro e local.
           </li>
           <li>
-            <strong>Pro pinned pages</strong>
-            Keep active sessions, parties, locations, or rules notes in a dedicated Pinned section.
+            <strong>Paginas fixadas Pro</strong>
+            Mantenha sessões ativas, grupos, locais ou notas de regras em uma área fixa dedicada.
           </li>
         </ul>
       </section>
@@ -153,15 +141,16 @@
       <section class="pro-panel" aria-labelledby="pro-title">
         <div>
           <p class="eyebrow">Moonvault Pro</p>
-          <h2 id="pro-title">A lifetime key for Ko-fi supporters</h2>
+          <h2 id="pro-title">Uma chave vitalícia para apoiadores no Ko-fi</h2>
           <p>
-            Any donation above US$10 on Ko-fi receives a lifetime license key to unlock
-            Moonvault Pro features like reusable page templates, linked template fields, and
-            pinned pages. Keys are verified locally, so your license keeps working even when
-            your prep night is fully offline.
+            Qualquer doação acima de US$10 no Ko-fi recebe uma chave vitalícia para
+            desbloquear recursos Pro, como modelos reutilizáveis de página, campos
+            conectados aos modelos e páginas fixadas. As chaves são verificadas localmente,
+            então sua licença continua funcionando mesmo quando a noite de preparo está
+            totalmente offline.
           </p>
         </div>
-        <a class="pro-action" href="https://ko-fi.com/squiter" rel="noopener">Support on Ko-fi</a>
+        <a class="pro-action" href="https://ko-fi.com/squiter" rel="noopener">Apoiar no Ko-fi</a>
       </section>
     </main>
     <footer class="footer">
@@ -201,10 +190,10 @@
 
           if (platformLinks.length > 0) {
             links.replaceChildren(...platformLinks);
-            latestVersion.textContent = `${latest.version} is ready for macOS, Windows, and Linux.`;
+            latestVersion.textContent = `${latest.version} está pronta para macOS, Windows e Linux.`;
           }
         } catch {
-          latestVersion.textContent = "Latest builds are available from the releases page.";
+          latestVersion.textContent = "As versões mais recentes estão disponíveis na página de lançamentos.";
         }
       }
 
@@ -212,7 +201,7 @@
 
       kofiWidgetOverlay.draw("squiter", {
         type: "floating-chat",
-        "floating-chat.donateButton.text": "Support me",
+        "floating-chat.donateButton.text": "Apoiar",
         "floating-chat.donateButton.background-color": "#794bc4",
         "floating-chat.donateButton.text-color": "#fff",
       });

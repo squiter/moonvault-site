@@ -134,6 +134,43 @@ body::before {
   letter-spacing: 0.04em;
 }
 
+.language-switcher {
+  display: inline-flex;
+  gap: 0.35rem;
+  margin-bottom: 1.1rem;
+  padding: 0.25rem;
+  border: 1px solid rgba(213, 170, 109, 0.26);
+  border-radius: 8px;
+  background: rgba(10, 6, 13, 0.28);
+}
+
+.language-switcher a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 3.1rem;
+  min-height: 2rem;
+  padding: 0.35rem 0.65rem;
+  border-radius: 6px;
+  color: var(--moon-parchment-deep);
+  font-family: "Cinzel", serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+}
+
+.language-switcher a[aria-current="page"] {
+  color: var(--moon-void);
+  background: var(--moon-gold-soft);
+}
+
+.language-switcher a:hover,
+.language-switcher a:focus-visible {
+  color: var(--moon-void);
+  background: var(--moon-gold);
+  outline: none;
+}
+
 .intro {
   max-width: 42rem;
   color: var(--moon-paper);

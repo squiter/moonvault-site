@@ -8,7 +8,8 @@ Served via GitHub Pages at `moonvaultrpg.com`. GitHub Pages builds the site with
 
 ## Layout
 
-- `index.html` — landing page ("coming soon")
+- `index.html` — English landing page with browser-language routing
+- `pt-BR/index.html` — Portuguese landing page
 - `blog/index.html` — blog index at `/blog/`
 - `_posts/` — published blog posts written in Markdown
 - `_drafts/` — unpublished post drafts and the post template
