@@ -1,23 +1,23 @@
 {
-  "version": "v1.60.3",
-  "notes": "### Added\n\n- Added previous and next Session navigation by campaign date in the Session header, sidebar, and\n  command palette.\n- Added month-title actions on fantasy calendars so GMs can create month-level Lore, Notes, or\n  Events with the fantasy date already filled in.\n",
-  "pub_date": "2026-07-05T23:02:15Z",
+  "version": "v1.60.4",
+  "notes": "### Added\n\n- Added a Vault Health Check repair for stale relationship frontmatter references, removing dead\n  relationship targets while leaving Markdown prose untouched.\n- Added Shadowdark and D&D 5e starter templates for Item and Ability pages in new vaults, alongside\n  the existing Tormenta20 and OSE packs.\n\n### Changed\n\n- Grouped Template Studio sidebar entries by page type and existing template subfolder path so\n  larger template sets are easier to scan without changing vault-local Markdown template files.\n\n### Fixed\n\n- Kept wikilinks, dice rollers, random table rollers, and summary embeds inert inside inline code\n  spans so examples stay readable in Preview and Live editor rendering.\n- Rendered ordered Markdown lists, including mixed nested ordered/unordered lists, through the same\n  preview pipeline that Live editor serialization already uses.\n- Let OSE and Tormenta20 monster screenshot imports detect multiple OCR statblocks and choose the\n  monster to import from the review modal instead of stopping at a crop-only error.\n",
+  "pub_date": "2026-07-07T14:25:59Z",
   "platforms": {
     "linux-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTUVBsMXBrQkpNeFQrYmsrYkxSUSszeHFMZmlRbHZSRU1RS1p0bDkycGNJaldUeXM3NTNCUTkweGY0SVRMdjZkNHNubGdhcGIvQnhqRmlKL0tISkY0Wm9vRUttMjN3aXdBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMjkyMDA5CWZpbGU6bW9vbnZhdWx0XzEuNjAuM19hbWQ2NC5BcHBJbWFnZS50YXIuZ3oKTnRydUFsNzlpaXY4anZFc2l2a3p4NkJNcUdUV29KQnVlS2VtQ0tRTSswaG1IM2hvdVZUZEdjalpONHBibEVTR2lsM3NTOWlmbG9vdlJaZXlxRTd2Q0E9PQo=",
-      "url": "https://github.com/squiter/moonvault-site/releases/download/v1.60.3/moonvault_1.60.3_amd64.AppImage.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTUVBsMXBrQkpNeFEzVFBhUUtRMDZuTzZCZHJuL0NIMGc5bFI3eVJ4QWhDdU5UalhlaVFwOHdEMUhvQVF0azhhL3RGWHYyZEV5clk4Q2lLbGI0R0xodTJGVVpQTVRzcWdnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzNDMzODQxCWZpbGU6bW9vbnZhdWx0XzEuNjAuNF9hbWQ2NC5BcHBJbWFnZS50YXIuZ3oKVkFwMWVFOU5hK0FHamtVYnJzQ1A3K0EwS2NoSnZRZjhydXZCNDBScVNpbzlpbC9oQ0ltRGg1ZTJGbUpTbS83WDZxSXJ2SG11YzJFaWtrUjdlam4wQnc9PQo=",
+      "url": "https://github.com/squiter/moonvault-site/releases/download/v1.60.4/moonvault_1.60.4_amd64.AppImage.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTUVBsMXBrQkpNeFF5dmdEbFc2QWJnODB3TXZiSkVtK1JPYm9paWJuM0FSSE5xWkRaaHBReGdNcmtUbE9ZTlNkSXQ4MHBhS040MTRlaWdUd0RyeDJRaDB6YnRwdWdMRlE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMjkyMzczCWZpbGU6TW9vbnZhdWx0XzEuNjAuM194NjRfZW4tVVMubXNpLnppcApiWmNMRzg1MmlnOWpqckU5cVlmZUp5TFNmYnBBQjNvdkphUCtZcDQyQURZS1lGNURvMVkzdjhkcEpJVWpxaVNFOHhCQXJnc2dBelM1SUNIcFBqcGJDZz09Cg==",
-      "url": "https://github.com/squiter/moonvault-site/releases/download/v1.60.3/Moonvault_1.60.3_x64_en-US.msi.zip"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTUVBsMXBrQkpNeGI4NVlQbkRhd1FnZy84cnM5QmgvU0tCUWF4QzMyMm5WdUhXNjU0dWRXWDF1Nk4yOTRadHVqdGpwZmNHYmFqdXZOS0xEZnpRdzdmVVFVK09rYmg1V0FRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzNDM0MjMxCWZpbGU6TW9vbnZhdWx0XzEuNjAuNF94NjRfZW4tVVMubXNpLnppcAoyNm41RlZvZTdSTkJLNndaakFvelovUXJ0ZXdCY1IwRElPMlBha3V1SDFwRTl1WFN3amdIdVFURzd1U3BUVnY0Ui9XU0FrRS9wSWt2dm9iNDBTQzJBQT09Cg==",
+      "url": "https://github.com/squiter/moonvault-site/releases/download/v1.60.4/Moonvault_1.60.4_x64_en-US.msi.zip"
     },
     "darwin-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTUVBsMXBrQkpNeFYvSTEvTE8xd25ZNElLUDZNeTV3RWxvYmszekhpM1VMZmo4K1VqZzZhQThLVENsaXpUYmxCeHFMQnBwcXFUYzZhY01QNzVKSnp4bVByaHFYQXc0UXc0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMjkxNTc0CWZpbGU6TW9vbnZhdWx0LmFwcC50YXIuZ3oKcTV2NnlNRG15MGYxVlgrb0Y4K3pRVXY1SThDbGZDa3ZSV0RVK2RzbnFTZWd3K3dOQ29LWWJGa0x3Z3JtMnFKbi9VWGQyUmZRK1hnWWkwVjRpQXN4QVE9PQo=",
-      "url": "https://github.com/squiter/moonvault-site/releases/download/v1.60.3/Moonvault_aarch64.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTUVBsMXBrQkpNeFkxUlFQZ0Rva0lTbnl6MjQ0Tk5RYXJ5aHVNQmNqekZLd1p1cGl2M3FueU1jTHVvSXRUR3hGaXlRV1B5cWxkSE9NU0M2UEZSTkRZb0pTZWZOeUJQUFEwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzNDMzNTIzCWZpbGU6TW9vbnZhdWx0LmFwcC50YXIuZ3oKczZ1dmN1REZFOHRSNGZ4SkpuTjZ0YkdrUjBQMW9RTkdTZUI4K3lsOW5sa1Y2SC9FSWJIR0FoU2Exb1pqQXlBSU9DMXBhUmxiN1pkVitXQzdUZHZQQlE9PQo=",
+      "url": "https://github.com/squiter/moonvault-site/releases/download/v1.60.4/Moonvault_aarch64.app.tar.gz"
     },
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTUVBsMXBrQkpNeFYvSTEvTE8xd25ZNElLUDZNeTV3RWxvYmszekhpM1VMZmo4K1VqZzZhQThLVENsaXpUYmxCeHFMQnBwcXFUYzZhY01QNzVKSnp4bVByaHFYQXc0UXc0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMjkxNTc0CWZpbGU6TW9vbnZhdWx0LmFwcC50YXIuZ3oKcTV2NnlNRG15MGYxVlgrb0Y4K3pRVXY1SThDbGZDa3ZSV0RVK2RzbnFTZWd3K3dOQ29LWWJGa0x3Z3JtMnFKbi9VWGQyUmZRK1hnWWkwVjRpQXN4QVE9PQo=",
-      "url": "https://github.com/squiter/moonvault-site/releases/download/v1.60.3/Moonvault_aarch64.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTUVBsMXBrQkpNeFkxUlFQZ0Rva0lTbnl6MjQ0Tk5RYXJ5aHVNQmNqekZLd1p1cGl2M3FueU1jTHVvSXRUR3hGaXlRV1B5cWxkSE9NU0M2UEZSTkRZb0pTZWZOeUJQUFEwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzNDMzNTIzCWZpbGU6TW9vbnZhdWx0LmFwcC50YXIuZ3oKczZ1dmN1REZFOHRSNGZ4SkpuTjZ0YkdrUjBQMW9RTkdTZUI4K3lsOW5sa1Y2SC9FSWJIR0FoU2Exb1pqQXlBSU9DMXBhUmxiN1pkVitXQzdUZHZQQlE9PQo=",
+      "url": "https://github.com/squiter/moonvault-site/releases/download/v1.60.4/Moonvault_aarch64.app.tar.gz"
     }
   }
 }
