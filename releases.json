@@ -1,7 +1,29 @@
 {
   "schema_version": 1,
-  "latest": "v1.60.6",
+  "latest": "v1.60.8",
   "releases": [
+    {
+      "version": "v1.60.8",
+      "published_at": "2026-07-13T16:58:37Z",
+      "notes": "### Added\n\n- Added privacy-safe PostHog analytics behind an explicit Settings opt-in, with development builds\n  disabled unless analytics is enabled through environment configuration.\n- Added a local analytics wrapper with property allowlisting, bounded offline queueing, retry\n  behavior, and no direct PostHog calls from UI components.\n- Added first product events for app launches, campaign/page workflows, search, calendars, exports,\n  sessions, and license activation outcomes using only safe metadata such as page type, RPG system,\n  license tier, app version, platform, feature name, and error code.\n- Added analytics documentation covering environment variables, consent, event names, safe\n  properties, and vault data Moonvault intentionally does not collect.\n",
+      "assets": {
+        "linux": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.60.8/moonvault_1.60.8_amd64.AppImage",
+          "size": 107254976,
+          "name": "moonvault_1.60.8_amd64.AppImage"
+        },
+        "macos": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.60.8/Moonvault_1.60.8_macOS.app.zip",
+          "size": 20734037,
+          "name": "Moonvault_1.60.8_macOS.app.zip"
+        },
+        "windows": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.60.8/Moonvault_1.60.8_x64_en-US.msi",
+          "size": 19066880,
+          "name": "Moonvault_1.60.8_x64_en-US.msi"
+        }
+      }
+    },
     {
       "version": "v1.60.6",
       "published_at": "2026-07-07T20:23:09Z",
