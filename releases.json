@@ -1,7 +1,29 @@
 {
   "schema_version": 1,
-  "latest": "v1.60.8",
+  "latest": "v1.60.9",
   "releases": [
+    {
+      "version": "v1.60.9",
+      "published_at": "2026-07-13T18:48:37Z",
+      "notes": "### Added\n\n- Added a first-vault-open analytics consent prompt with Yes, Not right now, Remind me later, and\n  No, never ask again choices.\n\n### Fixed\n\n- Fixed the home-screen update notice so it installs through Moonvault's native updater instead of\n  opening the release page, while still backing up the vault first when one is open.\n- Fixed page and template navigation so choosing another sidebar or in-page link closes Settings\n  instead of leaving the Settings panel open.\n- Restyled template rows in the sidebar to match the normal page list instead of appearing as\n  oversized bordered buttons.\n- Tightened analytics tracking so `campaign_opened` fires only when a Campaign page is opened, not\n  when another page silently updates the active campaign context.\n- Fixed analytics startup so event `license_tier` is captured after Moonvault loads the local Free\n  or Pro license state.\n- Switched analytics transport to the official `posthog-js` SDK so `$pageview` and `$pageleave`\n  events are emitted for PostHog Web Analytics health while custom event properties stay allowlisted.\n",
+      "assets": {
+        "linux": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.60.9/moonvault_1.60.9_amd64.AppImage",
+          "size": 107328704,
+          "name": "moonvault_1.60.9_amd64.AppImage"
+        },
+        "macos": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.60.9/Moonvault_1.60.9_macOS.app.zip",
+          "size": 20806333,
+          "name": "Moonvault_1.60.9_macOS.app.zip"
+        },
+        "windows": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.60.9/Moonvault_1.60.9_x64_en-US.msi",
+          "size": 19136512,
+          "name": "Moonvault_1.60.9_x64_en-US.msi"
+        }
+      }
+    },
     {
       "version": "v1.60.8",
       "published_at": "2026-07-13T16:58:37Z",
