@@ -1,7 +1,29 @@
 {
   "schema_version": 1,
-  "latest": "v1.60.9",
+  "latest": "v1.60.10",
   "releases": [
+    {
+      "version": "v1.60.10",
+      "published_at": "2026-07-14T16:33:59Z",
+      "notes": "\n### Added\n\n- Expanded explicit-opt-in PostHog observability for backups, updates, Template Studio, Map Room,\n  live session capture, command palette usage, Pro feature interest, and export failures while\n  keeping vault text, names, paths, images, and local folders out of analytics events.\n- Added PostHog dashboard, schema, funnel, and cohort follow-up notes for turning the new\n  privacy-safe events into useful product health views.\n\n### Changed\n\n- Updated the analytics wrapper to keep safe counts and booleans typed for PostHog dashboards,\n  bound numeric values, use the current PostHog SDK defaults snapshot, and keep feature-flag checks\n  on a short timeout.\n\n\n",
+      "assets": {
+        "linux": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.60.10/moonvault_1.60.10_amd64.AppImage",
+          "size": 107328704,
+          "name": "moonvault_1.60.10_amd64.AppImage"
+        },
+        "macos": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.60.10/Moonvault_1.60.10_macOS.app.zip",
+          "size": 20807943,
+          "name": "Moonvault_1.60.10_macOS.app.zip"
+        },
+        "windows": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.60.10/Moonvault_1.60.10_x64_en-US.msi",
+          "size": 19136512,
+          "name": "Moonvault_1.60.10_x64_en-US.msi"
+        }
+      }
+    },
     {
       "version": "v1.60.9",
       "published_at": "2026-07-13T18:48:37Z",
