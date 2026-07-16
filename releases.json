@@ -1,7 +1,29 @@
 {
   "schema_version": 1,
-  "latest": "v1.61.1",
+  "latest": "v1.61.6",
   "releases": [
+    {
+      "version": "v1.61.6",
+      "published_at": "2026-07-16T21:44:25Z",
+      "notes": "### Fixed\n\n- Fixed Tormenta20 monster OCR imports when red statblock labels are read with close OCR mistakes,\n  including `IND (0 \u00c0` for `ND 10` and labels like `Deresa`, `Pontos oe Vio`, and `Corpo a Corro`.\n- Split same-line Tormenta20 `Equipamento` and `Tesouro` OCR text into their correct monster fields.\n",
+      "assets": {
+        "linux": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.61.6/moonvault_1.61.6_amd64.AppImage",
+          "size": 107345088,
+          "name": "moonvault_1.61.6_amd64.AppImage"
+        },
+        "macos": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.61.6/Moonvault_1.61.6_macOS.app.zip",
+          "size": 20829620,
+          "name": "Moonvault_1.61.6_macOS.app.zip"
+        },
+        "windows": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.61.6/Moonvault_1.61.6_x64_en-US.msi",
+          "size": 19148800,
+          "name": "Moonvault_1.61.6_x64_en-US.msi"
+        }
+      }
+    },
     {
       "version": "v1.61.1",
       "published_at": "2026-07-16T20:17:36Z",
