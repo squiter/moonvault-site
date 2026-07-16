@@ -7,14 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#120b17" />
     <title>Moonvault — Download the RPG vault for game masters</title>
-    <meta name="description" content="Download Moonvault for macOS, Windows, and Linux. Moonvault has a forever free version and a lifetime Pro license for Ko-fi supporters." />
+    <meta name="description" content="Download Moonvault for macOS and Windows. Moonvault has a forever free version and a lifetime Pro license for Ko-fi supporters." />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://moonvaultrpg.com/" />
     <link rel="alternate" hreflang="en" href="https://moonvaultrpg.com/" />
     <link rel="alternate" hreflang="pt-BR" href="https://moonvaultrpg.com/pt-BR/" />
     <link rel="alternate" hreflang="x-default" href="https://moonvaultrpg.com/" />
     <meta property="og:title" content="Moonvault" />
-    <meta property="og:description" content="Download Moonvault for macOS, Windows, and Linux. Forever free, with a lifetime Pro license for Ko-fi supporters." />
+    <meta property="og:description" content="Download Moonvault for macOS and Windows. Forever free, with a lifetime Pro license for Ko-fi supporters." />
     <meta property="og:image" content="/assets/moonvault.png" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://moonvaultrpg.com/" />
@@ -79,7 +79,7 @@
             <a class="primary-action" href="/releases/">Download Moonvault</a>
             <a href="https://ko-fi.com/squiter" rel="noopener">Get Pro on Ko-fi</a>
           </nav>
-          <p id="latest-version" class="version-note">Latest builds for macOS, Windows, and Linux.</p>
+          <p id="latest-version" class="version-note">Latest builds for macOS and Windows.</p>
         </div>
       </section>
 
@@ -133,7 +133,7 @@
           </li>
           <li>
             <strong>Desktop downloads</strong>
-            Install stable builds for macOS, Windows, and Linux from the public release page.
+            Install stable builds for macOS and Windows from the public release page.
           </li>
           <li>
             <strong>Built-in updates</strong>
@@ -172,9 +172,8 @@
       const PLATFORM_LABELS = {
         macos: "macOS",
         windows: "Windows",
-        linux: "Linux",
       };
-      const PLATFORM_ORDER = ["macos", "windows", "linux"];
+      const PLATFORM_ORDER = ["macos", "windows"];
 
       async function loadLatestDownloads() {
         const links = document.querySelector(".download-links");
@@ -201,7 +200,7 @@
 
           if (platformLinks.length > 0) {
             links.replaceChildren(...platformLinks);
-            latestVersion.textContent = `${latest.version} is ready for macOS, Windows, and Linux.`;
+            latestVersion.textContent = `${latest.version} is ready for macOS and Windows.`;
           }
         } catch {
           latestVersion.textContent = "Latest builds are available from the releases page.";

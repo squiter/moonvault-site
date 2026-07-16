@@ -7,14 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#120b17" />
     <title>Moonvault — Baixe o cofre de RPG para mestres</title>
-    <meta name="description" content="Baixe o Moonvault para macOS, Windows e Linux. O Moonvault tem uma versão gratuita para sempre e uma licença Pro vitalícia para apoiadores no Ko-fi." />
+    <meta name="description" content="Baixe o Moonvault para macOS e Windows. O Moonvault tem uma versão gratuita para sempre e uma licença Pro vitalícia para apoiadores no Ko-fi." />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://moonvaultrpg.com/pt-BR/" />
     <link rel="alternate" hreflang="en" href="https://moonvaultrpg.com/" />
     <link rel="alternate" hreflang="pt-BR" href="https://moonvaultrpg.com/pt-BR/" />
     <link rel="alternate" hreflang="x-default" href="https://moonvaultrpg.com/" />
     <meta property="og:title" content="Moonvault" />
-    <meta property="og:description" content="Baixe o Moonvault para macOS, Windows e Linux. Grátis para sempre, com uma licença Pro vitalícia para apoiadores no Ko-fi." />
+    <meta property="og:description" content="Baixe o Moonvault para macOS e Windows. Grátis para sempre, com uma licença Pro vitalícia para apoiadores no Ko-fi." />
     <meta property="og:image" content="/assets/moonvault.png" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://moonvaultrpg.com/pt-BR/" />
@@ -67,7 +67,7 @@
             <a class="primary-action" href="/releases/">Baixar Moonvault</a>
             <a href="https://ko-fi.com/squiter" rel="noopener">Pegar o Pro no Ko-fi</a>
           </nav>
-          <p id="latest-version" class="version-note">Versões mais recentes para macOS, Windows e Linux.</p>
+          <p id="latest-version" class="version-note">Versões mais recentes para macOS e Windows.</p>
         </div>
       </section>
 
@@ -121,7 +121,7 @@
           </li>
           <li>
             <strong>Downloads para desktop</strong>
-            Instale versões estáveis para macOS, Windows e Linux pela página pública de lançamentos.
+            Instale versões estáveis para macOS e Windows pela página pública de lançamentos.
           </li>
           <li>
             <strong>Atualizacoes integradas</strong>
@@ -161,9 +161,8 @@
       const PLATFORM_LABELS = {
         macos: "macOS",
         windows: "Windows",
-        linux: "Linux",
       };
-      const PLATFORM_ORDER = ["macos", "windows", "linux"];
+      const PLATFORM_ORDER = ["macos", "windows"];
 
       async function loadLatestDownloads() {
         const links = document.querySelector(".download-links");
@@ -190,7 +189,7 @@
 
           if (platformLinks.length > 0) {
             links.replaceChildren(...platformLinks);
-            latestVersion.textContent = `${latest.version} está pronta para macOS, Windows e Linux.`;
+            latestVersion.textContent = `${latest.version} está pronta para macOS e Windows.`;
           }
         } catch {
           latestVersion.textContent = "As versões mais recentes estão disponíveis na página de lançamentos.";

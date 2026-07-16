@@ -55,8 +55,7 @@ Open `http://localhost:4000/blog/`. Omit `--drafts` to preview only published po
       "notes": "Changelog excerpt...",
       "assets": {
         "macos": { "url": "https://github.com/squiter/moonvault-site/releases/download/v1.21.4/Moonvault_x64.dmg", "size": 0 },
-        "windows": { "url": "https://github.com/squiter/moonvault-site/releases/download/v1.21.4/Moonvault_x64_en-US.msi", "size": 0 },
-        "linux": { "url": "https://github.com/squiter/moonvault-site/releases/download/v1.21.4/moonvault_amd64.AppImage", "size": 0 }
+        "windows": { "url": "https://github.com/squiter/moonvault-site/releases/download/v1.21.4/Moonvault_x64_en-US.msi", "size": 0 }
       }
     }
   ]
