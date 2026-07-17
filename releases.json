@@ -1,7 +1,24 @@
 {
   "schema_version": 1,
-  "latest": "v1.61.8",
+  "latest": "v1.61.9",
   "releases": [
+    {
+      "version": "v1.61.9",
+      "published_at": "2026-07-17T02:58:57Z",
+      "notes": "### Added\n\n- Added random-table OCR import for table screenshots, including a review step that creates one\n  rollable Random Table page per detected table and keeps the source image attached.\n- Added regression coverage for all 15 supplied table screenshots, including multi-table d100\n  pages, compact lookup tables, and Tormenta20 PT-BR tables.\n\n### Fixed\n\n- Improved OCR scoring for table-heavy screenshots so headers like `Tabela`, `Resultado`,\n  `Rolagem`, `Dano`, `Per\u00edcias`, `Divindade`, `Classe`, and `Ra\u00e7a` help select better OCR output.\n",
+      "assets": {
+        "macos": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.61.9/Moonvault_1.61.9_macOS.app.zip",
+          "size": 20833741,
+          "name": "Moonvault_1.61.9_macOS.app.zip"
+        },
+        "windows": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.61.9/Moonvault_1.61.9_x64_en-US.msi",
+          "size": 19152896,
+          "name": "Moonvault_1.61.9_x64_en-US.msi"
+        }
+      }
+    },
     {
       "version": "v1.61.8",
       "published_at": "2026-07-17T02:30:39Z",
