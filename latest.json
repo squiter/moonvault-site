@@ -1,19 +1,19 @@
 {
-  "version": "v1.61.7",
-  "notes": "### Fixed\n\n- Fixed Tormenta20 monster OCR imports when the monster name and a noisy `ND` badge are read on\n  separate lines, as in the Gigante Bic\u00e9falo statblock.\n",
-  "pub_date": "2026-07-17T02:15:16Z",
+  "version": "v1.61.8",
+  "notes": "### Fixed\n\n- Filtered saved templates and Rules pages by the focused campaign's rules system so other-system\n  prep stays out of the way.\n- Improved Template sidebar actions with compact icon buttons for Browse and New.\n- Fixed Live preview bold rendering when multiple `**bold**` spans appear in the same list item\n  near wikilinks.\n- Filled the pinned-page star button when a page is already pinned.\n- Fixed Tormenta20 monster OCR for Gigante Bic\u00e9falo-style statblocks.\n",
+  "pub_date": "2026-07-17T02:30:39Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTUVBsMXBrQkpNeFNyM04rSjV6NXdKeDFGdU0xT280TVZQNXRtVzZQeEpCSVlZaWdTTUM5NEFVbXR5VWw4bzFuc2FBcEFLcVErWGNQZm9PbThmR3NmT1kvTWx6WGZJT3drPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0MjU0NDAxCWZpbGU6TW9vbnZhdWx0XzEuNjEuN194NjRfZW4tVVMubXNpLnppcAplR3Z6MVlZTzRmS2RLMzJaZ29ES0ljMmJSTDI3SUNYVGJ2Ym1SRGhQQ0tGMlJYbEtvSnYzOGJHQVFTVFdpTm5Vak5UVjlyZWJDL0tFUlFnZXprZlNCZz09Cg==",
-      "url": "https://github.com/squiter/moonvault-site/releases/download/v1.61.7/Moonvault_1.61.7_x64_en-US.msi.zip"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTUVBsMXBrQkpNeFRhZCtia3h6VzRFelJLQUFyUTBINE85eUJ2Z3ViOVFnT204WU94d3BPblhOVnd3UjhZaHFNMWJQT1ZvUkpLUmVVTFVCOXNnOXgxTmYzZG1rMGozNkFRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0MjU1MjUwCWZpbGU6TW9vbnZhdWx0XzEuNjEuOF94NjRfZW4tVVMubXNpLnppcApRVTQ5V25ZKzdoSWppclg0RnA1S1I1YXVvNUphWEk5Uzl2SUxHTGZEZllzSkpqU09NajdSRFpvOTNtcmFIMDZvNjQ3M2pvaEdmMDN6ZEJCN2tYV2hCdz09Cg==",
+      "url": "https://github.com/squiter/moonvault-site/releases/download/v1.61.8/Moonvault_1.61.8_x64_en-US.msi.zip"
     },
     "darwin-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTUVBsMXBrQkpNeFp1K0lMcEwwT3R5OEtTSld4Wi9tRkl1NzUvdFQ1SkF5V1R5OFhuVTROVW1ub0l5Slo0U3poaUlVbE9IME80YzRuSTZHdjNhSTA4L3ZyWWhRSG1taHdRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0MjUzNjc1CWZpbGU6TW9vbnZhdWx0LmFwcC50YXIuZ3oKY3BxdGJpUFZva25ZYnpid2tJZmhpaFBNYzI4OUwwa3h5TGpYdEtjbFJmVE81RFFKcGdhbHgwb2VjaDBYbjBJRExzMWYxTFJ2UitVN1V0blNzN1hvQ3c9PQo=",
-      "url": "https://github.com/squiter/moonvault-site/releases/download/v1.61.7/Moonvault_aarch64.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTUVBsMXBrQkpNeGNhV0hkemxKUGpDL0Q3b1lycVE2YUNmeE9YWjFhTG1maC9yKzFLL3EwNG16N1pqSXBxU3ZvUVB2cnJLTTFBb3N3M29DZ3pJRk5BU1JUb3IwUDZTV3djPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0MjU0NzkyCWZpbGU6TW9vbnZhdWx0LmFwcC50YXIuZ3oKN2hCcVRTMldJVnhjZ3RQSi9DU1Zjd255dHg0TlhPTHNDbVRIUU9paHJ2eFNST2k1U202NEkrclR3aThkVmx3UXlzdFRBOWNhSVFETjY1Qk1VNmlJQkE9PQo=",
+      "url": "https://github.com/squiter/moonvault-site/releases/download/v1.61.8/Moonvault_aarch64.app.tar.gz"
     },
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTUVBsMXBrQkpNeFp1K0lMcEwwT3R5OEtTSld4Wi9tRkl1NzUvdFQ1SkF5V1R5OFhuVTROVW1ub0l5Slo0U3poaUlVbE9IME80YzRuSTZHdjNhSTA4L3ZyWWhRSG1taHdRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0MjUzNjc1CWZpbGU6TW9vbnZhdWx0LmFwcC50YXIuZ3oKY3BxdGJpUFZva25ZYnpid2tJZmhpaFBNYzI4OUwwa3h5TGpYdEtjbFJmVE81RFFKcGdhbHgwb2VjaDBYbjBJRExzMWYxTFJ2UitVN1V0blNzN1hvQ3c9PQo=",
-      "url": "https://github.com/squiter/moonvault-site/releases/download/v1.61.7/Moonvault_aarch64.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTUVBsMXBrQkpNeGNhV0hkemxKUGpDL0Q3b1lycVE2YUNmeE9YWjFhTG1maC9yKzFLL3EwNG16N1pqSXBxU3ZvUVB2cnJLTTFBb3N3M29DZ3pJRk5BU1JUb3IwUDZTV3djPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0MjU0NzkyCWZpbGU6TW9vbnZhdWx0LmFwcC50YXIuZ3oKN2hCcVRTMldJVnhjZ3RQSi9DU1Zjd255dHg0TlhPTHNDbVRIUU9paHJ2eFNST2k1U202NEkrclR3aThkVmx3UXlzdFRBOWNhSVFETjY1Qk1VNmlJQkE9PQo=",
+      "url": "https://github.com/squiter/moonvault-site/releases/download/v1.61.8/Moonvault_aarch64.app.tar.gz"
     }
   }
 }

@@ -1,7 +1,24 @@
 {
   "schema_version": 1,
-  "latest": "v1.61.7",
+  "latest": "v1.61.8",
   "releases": [
+    {
+      "version": "v1.61.8",
+      "published_at": "2026-07-17T02:30:39Z",
+      "notes": "### Fixed\n\n- Filtered saved templates and Rules pages by the focused campaign's rules system so other-system\n  prep stays out of the way.\n- Improved Template sidebar actions with compact icon buttons for Browse and New.\n- Fixed Live preview bold rendering when multiple `**bold**` spans appear in the same list item\n  near wikilinks.\n- Filled the pinned-page star button when a page is already pinned.\n- Fixed Tormenta20 monster OCR for Gigante Bic\u00e9falo-style statblocks.\n",
+      "assets": {
+        "macos": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.61.8/Moonvault_1.61.8_macOS.app.zip",
+          "size": 20830309,
+          "name": "Moonvault_1.61.8_macOS.app.zip"
+        },
+        "windows": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.61.8/Moonvault_1.61.8_x64_en-US.msi",
+          "size": 19148800,
+          "name": "Moonvault_1.61.8_x64_en-US.msi"
+        }
+      }
+    },
     {
       "version": "v1.61.7",
       "published_at": "2026-07-17T02:15:16Z",
