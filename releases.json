@@ -1,7 +1,24 @@
 {
   "schema_version": 1,
-  "latest": "v1.61.9",
+  "latest": "v1.61.10",
   "releases": [
+    {
+      "version": "v1.61.10",
+      "published_at": "2026-07-19T05:56:35Z",
+      "notes": "### Changed\n\n- Reworked the page header so navigation, document controls, and session workflow actions read as\n  separate areas without turning the Session header into a wall of buttons.\n",
+      "assets": {
+        "macos": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.61.10/Moonvault_1.61.10_macOS.app.zip",
+          "size": 20833461,
+          "name": "Moonvault_1.61.10_macOS.app.zip"
+        },
+        "windows": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.61.10/Moonvault_1.61.10_x64_en-US.msi",
+          "size": 19152896,
+          "name": "Moonvault_1.61.10_x64_en-US.msi"
+        }
+      }
+    },
     {
       "version": "v1.61.9",
       "published_at": "2026-07-17T02:58:57Z",
