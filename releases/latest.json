@@ -1,19 +1,19 @@
 {
-  "version": "v1.61.10",
-  "notes": "### Changed\n\n- Reworked the page header so navigation, document controls, and session workflow actions read as\n  separate areas without turning the Session header into a wall of buttons.\n",
-  "pub_date": "2026-07-19T05:56:35Z",
+  "version": "v1.62.0",
+  "notes": "## Added\n\n- Added gated local AI random-table imports for Pro users with Beta features enabled, including\n  Ollama setup guidance, model downloads, review-before-create import flow, and pt-BR copy.\n- Added gated local AI monster imports for Tormenta20 and OSE screenshots, reusing the editable\n  OCR review flow before creating or filling monster pages.\n\n## Changed\n\n- Changed the default local vision model to `minicpm-v`, which is the model that completed the\n  integrated Moonvault import test successfully.\n- Animated the AI import waiting state so it is clearer when Moonvault is still reading the image.\n- Aligned monster sidebars, summary cards, and encounter combat labels with each monster's rules\n  system so Tormenta20 uses `ND`, `Def`, and `PV`, OSE uses `HD`, `AC`, `HP`, and saves, and\n  Shadowdark/D&D monsters avoid fields from other games.\n\n## Fixed\n\n- Kept the AI import review modal open on local model failures and added a timeout message when\n  Ollama takes too long to answer.\n- Preserved more native Tormenta20 and OSE monster fields from imported statblocks, including\n  Tormenta20 perception, attributes, skills, equipment, and OSE saving throws.\n\n",
+  "pub_date": "2026-07-22T23:05:53Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTUVBsMXBrQkpNeFkxNlZxUkhiTCtJZlV3ckxQMGFrSVQ4eklNckhMS0c0WTByMXIvVTJmNDdCRFhKdmw0b0VUbGN5dStqYS9zRTg0enVqMnNJOEtMcGdWMUh4U0g1R1FvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0NDQwNDM4CWZpbGU6TW9vbnZhdWx0XzEuNjEuMTBfeDY0X2VuLVVTLm1zaS56aXAKVG1sc0VyekR4MUxTUDNGODVaZXVncmNEa1QzOG5EK3BjRHZFVTNVSGNEeHRrcEpIUmRUUkR3MTZaQm9TTDhIdDBKaTQ2ZllQMU5Va20xcmZZdFhSQnc9PQo=",
-      "url": "https://github.com/squiter/moonvault-site/releases/download/v1.61.10/Moonvault_1.61.10_x64_en-US.msi.zip"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTUVBsMXBrQkpNeFNub2RWd0lSZDd4cmpXMmhBVnR3UTRqL0RYOTNOOVlqdGp2NlZFMnAzQ1Npd3BYdW5KQUt5Q25rMFowNHJSdXBLN3VKR09VUEUyU0R5UDRhWmNubVFrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0NzYxMzM4CWZpbGU6TW9vbnZhdWx0XzEuNjIuMF94NjRfZW4tVVMubXNpLnppcAowdXF1Y2I4M0ZrQWxFbXdpSTlVUlNlUGFhaTJrZDN6cUFrb2ZlQS9uYnN4UElGTkNrc0hsSVVtV2lPK0xQeVYxdlYyRlRhc3RyQU91UnJkd3MwUFhDQT09Cg==",
+      "url": "https://github.com/squiter/moonvault-site/releases/download/v1.62.0/Moonvault_1.62.0_x64_en-US.msi.zip"
     },
     "darwin-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTUVBsMXBrQkpNeFZqQ0hRTHBWRWFINTdpSU05blRpTVdBVnNtTXUwSklNTEtrbEUweHFyWGZvVVptVmpZWmNFQ0lMb29RWEYraE5XRGRxZEVoU1JWTjNTWEZ1aUFLYmdRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0NDM5NzU2CWZpbGU6TW9vbnZhdWx0LmFwcC50YXIuZ3oKSWo4NHhXQVBGK09CYzBkd1BxQVFkeFltT0dPNUJxSnpOakZIdkZ4Z0FJUFJZQWdPL0pxODhocmE4d2QreWdHWW1aS08rcUVIT2EzTFlqTDVDRXgrREE9PQo=",
-      "url": "https://github.com/squiter/moonvault-site/releases/download/v1.61.10/Moonvault_aarch64.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTUVBsMXBrQkpNeFZma3dsR1cyczhjN1VpSjNhYmdLVUt3VlVuQ3VERlhCUEZXRGcwM0lGRkZpaUd3L1FIQ3A0R3dYeHZOVldsdHJkaUJ0RUZqbExqd2VNT3VYajczQWc0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0NzYwNTk4CWZpbGU6TW9vbnZhdWx0LmFwcC50YXIuZ3oKNUF5Q0JPR2JKaU1CMkdzSXlJTFZYaXp0aXRlM05neFJHR0ZlZGhOWXR1QWZjKzdwTFVJTFM5WTJqUCtNRFdyb2JyajgvWmloK0JqejNjKzRPZWtWREE9PQo=",
+      "url": "https://github.com/squiter/moonvault-site/releases/download/v1.62.0/Moonvault_aarch64.app.tar.gz"
     },
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTUVBsMXBrQkpNeFZqQ0hRTHBWRWFINTdpSU05blRpTVdBVnNtTXUwSklNTEtrbEUweHFyWGZvVVptVmpZWmNFQ0lMb29RWEYraE5XRGRxZEVoU1JWTjNTWEZ1aUFLYmdRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0NDM5NzU2CWZpbGU6TW9vbnZhdWx0LmFwcC50YXIuZ3oKSWo4NHhXQVBGK09CYzBkd1BxQVFkeFltT0dPNUJxSnpOakZIdkZ4Z0FJUFJZQWdPL0pxODhocmE4d2QreWdHWW1aS08rcUVIT2EzTFlqTDVDRXgrREE9PQo=",
-      "url": "https://github.com/squiter/moonvault-site/releases/download/v1.61.10/Moonvault_aarch64.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTUVBsMXBrQkpNeFZma3dsR1cyczhjN1VpSjNhYmdLVUt3VlVuQ3VERlhCUEZXRGcwM0lGRkZpaUd3L1FIQ3A0R3dYeHZOVldsdHJkaUJ0RUZqbExqd2VNT3VYajczQWc0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0NzYwNTk4CWZpbGU6TW9vbnZhdWx0LmFwcC50YXIuZ3oKNUF5Q0JPR2JKaU1CMkdzSXlJTFZYaXp0aXRlM05neFJHR0ZlZGhOWXR1QWZjKzdwTFVJTFM5WTJqUCtNRFdyb2JyajgvWmloK0JqejNjKzRPZWtWREE9PQo=",
+      "url": "https://github.com/squiter/moonvault-site/releases/download/v1.62.0/Moonvault_aarch64.app.tar.gz"
     }
   }
 }

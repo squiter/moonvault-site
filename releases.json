@@ -1,7 +1,24 @@
 {
   "schema_version": 1,
-  "latest": "v1.61.10",
+  "latest": "v1.62.0",
   "releases": [
+    {
+      "version": "v1.62.0",
+      "published_at": "2026-07-22T23:05:53Z",
+      "notes": "## Added\n\n- Added gated local AI random-table imports for Pro users with Beta features enabled, including\n  Ollama setup guidance, model downloads, review-before-create import flow, and pt-BR copy.\n- Added gated local AI monster imports for Tormenta20 and OSE screenshots, reusing the editable\n  OCR review flow before creating or filling monster pages.\n\n## Changed\n\n- Changed the default local vision model to `minicpm-v`, which is the model that completed the\n  integrated Moonvault import test successfully.\n- Animated the AI import waiting state so it is clearer when Moonvault is still reading the image.\n- Aligned monster sidebars, summary cards, and encounter combat labels with each monster's rules\n  system so Tormenta20 uses `ND`, `Def`, and `PV`, OSE uses `HD`, `AC`, `HP`, and saves, and\n  Shadowdark/D&D monsters avoid fields from other games.\n\n## Fixed\n\n- Kept the AI import review modal open on local model failures and added a timeout message when\n  Ollama takes too long to answer.\n- Preserved more native Tormenta20 and OSE monster fields from imported statblocks, including\n  Tormenta20 perception, attributes, skills, equipment, and OSE saving throws.\n\n",
+      "assets": {
+        "macos": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.62.0/Moonvault_1.62.0_macOS.app.zip",
+          "size": 20882173,
+          "name": "Moonvault_1.62.0_macOS.app.zip"
+        },
+        "windows": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.62.0/Moonvault_1.62.0_x64_en-US.msi",
+          "size": 19202048,
+          "name": "Moonvault_1.62.0_x64_en-US.msi"
+        }
+      }
+    },
     {
       "version": "v1.61.10",
       "published_at": "2026-07-19T05:56:35Z",
