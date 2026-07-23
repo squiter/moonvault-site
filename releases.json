@@ -1,7 +1,24 @@
 {
   "schema_version": 1,
-  "latest": "v1.62.0",
+  "latest": "v1.63.0",
   "releases": [
+    {
+      "version": "v1.63.0",
+      "published_at": "2026-07-23T18:39:08Z",
+      "notes": "### Added\n\n- Added finite Random Table draw modes so a table can work like a Deck or Bag, draw without\n  replacement, track remaining and discarded entries, refill the pool, and return one discarded\n  entry.\n- Added saved sidebar searches for each vault, including query, page type, tag, and focused campaign\n  filters with quick apply and delete controls.\n\n### Changed\n\n- Updated the in-app guide and implementation plan with English and pt-BR notes for deck/bag table\n  draws and reusable sidebar search filters.\n",
+      "assets": {
+        "macos": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.63.0/Moonvault_1.63.0_macOS.app.zip",
+          "size": 20883657,
+          "name": "Moonvault_1.63.0_macOS.app.zip"
+        },
+        "windows": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.63.0/Moonvault_1.63.0_x64_en-US.msi",
+          "size": 19206144,
+          "name": "Moonvault_1.63.0_x64_en-US.msi"
+        }
+      }
+    },
     {
       "version": "v1.62.0",
       "published_at": "2026-07-22T23:05:53Z",
