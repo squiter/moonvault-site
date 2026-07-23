@@ -1,19 +1,19 @@
 {
-  "version": "v1.63.0",
-  "notes": "### Added\n\n- Added finite Random Table draw modes so a table can work like a Deck or Bag, draw without\n  replacement, track remaining and discarded entries, refill the pool, and return one discarded\n  entry.\n- Added saved sidebar searches for each vault, including query, page type, tag, and focused campaign\n  filters with quick apply and delete controls.\n\n### Changed\n\n- Updated the in-app guide and implementation plan with English and pt-BR notes for deck/bag table\n  draws and reusable sidebar search filters.\n",
-  "pub_date": "2026-07-23T18:39:08Z",
+  "version": "v1.64.0",
+  "notes": "### Added\n\n- Added command palette actions for saving the current sidebar search and reopening saved searches\n  without returning to the sidebar controls.\n- Added a missing-page workbench that scans unresolved wikilinks in the current scope, shows source\n  pages and counts, suggests page types, and starts creation with the linked title filled in.\n- Added a Shuffle control for finite Random Table decks and bags so the remaining pool can be\n  randomized without refilling or changing the discard pile.\n\n### Changed\n\n- Updated the in-app guide and implementation plan with English and pt-BR notes for missing-page\n  cleanup, saved search palette access, and deck/bag shuffling.\n",
+  "pub_date": "2026-07-23T21:05:21Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTUVBsMXBrQkpNeGR3bFM0Mk9aYnRkemdoZUduQmtuMWlYL2VyT0I0eTlMc3lwN1UvUis2ZzEvbDVEdUliak8rUUQwTHFDZUVTeTJ2eWlJQmxEa2grcmNHRzR6ZUphOEFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0ODMxODA1CWZpbGU6TW9vbnZhdWx0XzEuNjMuMF94NjRfZW4tVVMubXNpLnppcApVK1I3ZFB4VjFpQ284czBGVTAxeGRqemlyTllxM2FpdnUvWmRtK1UvdU1yL2JJMDBIaVBvdVVNYkloMUk0a3FqUFoxNldCWit2cXNmMnBnQ3hEbGdDUT09Cg==",
-      "url": "https://github.com/squiter/moonvault-site/releases/download/v1.63.0/Moonvault_1.63.0_x64_en-US.msi.zip"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTUVBsMXBrQkpNeFlBUTR2UU4xQ3NOc3lWUWxJRmp2ZHZiV25peEM2SC9VRUd4SUlkNldWaG1iR1NvcU9NejhpMkNkQUE2OUoyZlY2cUdaOU04RVVYYjRUMzVpSmNTV2d3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0ODQwNjA1CWZpbGU6TW9vbnZhdWx0XzEuNjQuMF94NjRfZW4tVVMubXNpLnppcApNR1UwTmxSaXpoMDVEcGNvNXBUZFkrL1VzN3ZTQlZxUHMwR3VYK2NEaWFYNys1NktYSE80M1VYT1YvZERzQkIyMkRDRmM5TTlBRFo3WnV3VUQ2d25BZz09Cg==",
+      "url": "https://github.com/squiter/moonvault-site/releases/download/v1.64.0/Moonvault_1.64.0_x64_en-US.msi.zip"
     },
     "darwin-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTUVBsMXBrQkpNeFdabGFsOGhSRGxDbHByQmNhdTNYSEZHVzRZVmVDc2k3M0FjeXhmeXRwZ3oxNlBCOURBeTBvUmJPaE9JSWpvRFZvN1JFTzRTbWZQMHc1alp0a3dheGdrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0ODMxMDg1CWZpbGU6TW9vbnZhdWx0LmFwcC50YXIuZ3oKUG5ITnY2aDJwNzVGTTFZalRYS0VmY1lFdEpKNDdhNFlXM2lWU09PR28wSWVvN0JSYVVQS01weGNCdVZ3b0hFWU1IVTVjU1ZsN2dlSVlrSzBtSXpKQ2c9PQo=",
-      "url": "https://github.com/squiter/moonvault-site/releases/download/v1.63.0/Moonvault_aarch64.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTUVBsMXBrQkpNeGRiOGtVVzNxbENpQWlQdnhOenVnUXdxR3Fjd01iSHpWNE9UV3IxQTNiYjVQN1lFL0JMWEVXOERZOUhWa0gxY2IvKzNBTmFuaGQ3RmtzWEpvdU9jYXdBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0ODM5OTYyCWZpbGU6TW9vbnZhdWx0LmFwcC50YXIuZ3oKTzRqUzJwdHRlYStwUWVXQ0VNM0ZtUWlFWTYvZFpKMjdoSXdxT3puSUs1OGt3aFh5SVlkQ3FyWmt5Y0pSMnBNUURnSVkvOThqT0RwNHVEWHQ4TEVxQXc9PQo=",
+      "url": "https://github.com/squiter/moonvault-site/releases/download/v1.64.0/Moonvault_aarch64.app.tar.gz"
     },
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTUVBsMXBrQkpNeFdabGFsOGhSRGxDbHByQmNhdTNYSEZHVzRZVmVDc2k3M0FjeXhmeXRwZ3oxNlBCOURBeTBvUmJPaE9JSWpvRFZvN1JFTzRTbWZQMHc1alp0a3dheGdrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0ODMxMDg1CWZpbGU6TW9vbnZhdWx0LmFwcC50YXIuZ3oKUG5ITnY2aDJwNzVGTTFZalRYS0VmY1lFdEpKNDdhNFlXM2lWU09PR28wSWVvN0JSYVVQS01weGNCdVZ3b0hFWU1IVTVjU1ZsN2dlSVlrSzBtSXpKQ2c9PQo=",
-      "url": "https://github.com/squiter/moonvault-site/releases/download/v1.63.0/Moonvault_aarch64.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTUVBsMXBrQkpNeGRiOGtVVzNxbENpQWlQdnhOenVnUXdxR3Fjd01iSHpWNE9UV3IxQTNiYjVQN1lFL0JMWEVXOERZOUhWa0gxY2IvKzNBTmFuaGQ3RmtzWEpvdU9jYXdBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0ODM5OTYyCWZpbGU6TW9vbnZhdWx0LmFwcC50YXIuZ3oKTzRqUzJwdHRlYStwUWVXQ0VNM0ZtUWlFWTYvZFpKMjdoSXdxT3puSUs1OGt3aFh5SVlkQ3FyWmt5Y0pSMnBNUURnSVkvOThqT0RwNHVEWHQ4TEVxQXc9PQo=",
+      "url": "https://github.com/squiter/moonvault-site/releases/download/v1.64.0/Moonvault_aarch64.app.tar.gz"
     }
   }
 }

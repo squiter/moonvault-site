@@ -1,7 +1,24 @@
 {
   "schema_version": 1,
-  "latest": "v1.63.0",
+  "latest": "v1.64.0",
   "releases": [
+    {
+      "version": "v1.64.0",
+      "published_at": "2026-07-23T21:05:21Z",
+      "notes": "### Added\n\n- Added command palette actions for saving the current sidebar search and reopening saved searches\n  without returning to the sidebar controls.\n- Added a missing-page workbench that scans unresolved wikilinks in the current scope, shows source\n  pages and counts, suggests page types, and starts creation with the linked title filled in.\n- Added a Shuffle control for finite Random Table decks and bags so the remaining pool can be\n  randomized without refilling or changing the discard pile.\n\n### Changed\n\n- Updated the in-app guide and implementation plan with English and pt-BR notes for missing-page\n  cleanup, saved search palette access, and deck/bag shuffling.\n",
+      "assets": {
+        "macos": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.64.0/Moonvault_1.64.0_macOS.app.zip",
+          "size": 20885062,
+          "name": "Moonvault_1.64.0_macOS.app.zip"
+        },
+        "windows": {
+          "url": "https://github.com/squiter/moonvault-site/releases/download/v1.64.0/Moonvault_1.64.0_x64_en-US.msi",
+          "size": 19206144,
+          "name": "Moonvault_1.64.0_x64_en-US.msi"
+        }
+      }
+    },
     {
       "version": "v1.63.0",
       "published_at": "2026-07-23T18:39:08Z",
